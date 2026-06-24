@@ -96,9 +96,16 @@ The dataset includes:
 ## Dashboard Pages
 
 1. Executive Summary
-2. Budget vs Actuals
+<img width="1470" height="747" alt="Screenshot 2026-06-24 at 1 40 20 PM" src="https://github.com/user-attachments/assets/9e030b96-ef5e-425c-bb9f-9b1616fb79d1" />
+2. Budget vs Actuals\
+<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 27 04 PM" src="https://github.com/user-attachments/assets/dbf53e02-ca02-4b4d-8ba1-c7c25d1a245a" />
 3. Department Analysis
+<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 27 53 PM" src="https://github.com/user-attachments/assets/ceba44fb-4b25-48aa-a0d7-7df5d6006f37" />
 4. Revenue & Expense Trends
+<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 28 25 PM" src="https://github.com/user-attachments/assets/d2d0b75c-7751-498e-85a3-67ecc6bda207" />
 5. Forecasting
+<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 29 53 PM" src="https://github.com/user-attachments/assets/3d721f2c-dfc2-4d62-a5f0-aad52777bafd" />
 6. Scenario Analysis
+<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 30 17 PM" src="https://github.com/user-attachments/assets/6e89bb28-03a2-41d5-a1c6-88b99f230367" />
 7. Variance Drivers
+<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 31 03 PM" src="https://github.com/user-attachments/assets/e0761bf0-8d92-4e15-98f7-7d4c52d6d112" />
