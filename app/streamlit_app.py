@@ -20,7 +20,71 @@ st.set_page_config(
     page_icon="📊",
     layout="wide"
 )
+st.markdown(
+    """
+    <style>
+    .main {
+        background-color: #F7F9FB;
+    }
 
+    h1, h2, h3 {
+        color: #111827;
+        font-weight: 700;
+    }
+
+    [data-testid="stMetric"] {
+        background-color: #FFFFFF;
+        border: 1px solid #E5E7EB;
+        padding: 18px;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    [data-testid="stMetricLabel"] {
+        color: #6B7280;
+        font-size: 14px;
+    }
+
+    [data-testid="stMetricValue"] {
+        color: #111827;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    section[data-testid="stSidebar"] {
+        background-color: #0F172A;
+    }
+
+    section[data-testid="stSidebar"] * {
+        color: #FFFFFF;
+    }
+
+    div[data-testid="stDataFrame"] {
+        border: 1px solid #E5E7EB;
+        border-radius: 10px;
+    }
+
+    .dashboard-header {
+        background: linear-gradient(135deg, #0F172A 0%, #1F7A4D 100%);
+        padding: 28px;
+        border-radius: 14px;
+        margin-bottom: 24px;
+    }
+
+    .dashboard-header h1 {
+        color: white;
+        margin-bottom: 4px;
+    }
+
+    .dashboard-header p {
+        color: #D1FAE5;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 @st.cache_data
 def query_df(sql):
@@ -85,9 +149,15 @@ def render_kpi_cards(latest):
 
 
 def executive_summary_page(monthly, drivers):
-    st.title("FinPlanIQ")
-    st.caption("FP&A dashboard for budget vs actuals, variance analysis, forecasting, and scenario planning.")
-
+    st.markdown(
+    """
+    <div class="dashboard-header">
+        <h1>FinPlanIQ</h1>
+        <p>Monthly FP&A performance review for budget vs actuals, variance analysis, forecasting, and scenario planning.</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
     latest = monthly.sort_values("month").iloc[-1]
     render_kpi_cards(latest)
 
