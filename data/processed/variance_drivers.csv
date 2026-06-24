@@ -1,0 +1,447 @@
+month,driver_type,driver_category,unfavorable_amount,explanation,rank_in_month
+2023-01-01,Revenue Shortfall,North America / Professional Services,36289.25,Revenue came in below budget for North America - Professional Services,1.0
+2023-01-01,Expense Overspend,G&A / Corporate Operations,26823.25,G&A overspent budget in Corporate Operations,2.0
+2023-01-01,Expense Overspend,Sales / Revenue Operations,16498.93,Sales overspent budget in Revenue Operations,3.0
+2023-01-01,Expense Overspend,Product / Product Management,6295.63,Product overspent budget in Product Management,4.0
+2023-01-01,Revenue Shortfall,LATAM / Enterprise Subscription,5371.23,Revenue came in below budget for LATAM - Enterprise Subscription,5.0
+2023-01-01,Revenue Shortfall,APAC / Professional Services,1203.45,Revenue came in below budget for APAC - Professional Services,6.0
+2023-01-01,Revenue Shortfall,Europe / Enterprise Subscription,526.72,Revenue came in below budget for Europe - Enterprise Subscription,7.0
+2023-02-01,Revenue Shortfall,North America / Enterprise Subscription,29548.21,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2023-02-01,Revenue Shortfall,Europe / SMB Subscription,12779.58,Revenue came in below budget for Europe - SMB Subscription,2.0
+2023-02-01,Revenue Shortfall,North America / Data & Insights,11264.06,Revenue came in below budget for North America - Data & Insights,3.0
+2023-02-01,Revenue Shortfall,APAC / Professional Services,9599.92,Revenue came in below budget for APAC - Professional Services,4.0
+2023-02-01,Revenue Shortfall,LATAM / Professional Services,6968.94,Revenue came in below budget for LATAM - Professional Services,5.0
+2023-02-01,Revenue Shortfall,LATAM / SMB Subscription,6650.52,Revenue came in below budget for LATAM - SMB Subscription,6.0
+2023-02-01,Expense Overspend,G&A / Corporate Operations,4658.3,G&A overspent budget in Corporate Operations,7.0
+2023-02-01,Revenue Shortfall,LATAM / Enterprise Subscription,3491.69,Revenue came in below budget for LATAM - Enterprise Subscription,8.0
+2023-02-01,Expense Overspend,Customer Success / Client Operations,2261.0,Customer Success overspent budget in Client Operations,9.0
+2023-02-01,Revenue Shortfall,APAC / Data & Insights,2249.18,Revenue came in below budget for APAC - Data & Insights,10.0
+2023-02-01,Revenue Shortfall,North America / Professional Services,2144.86,Revenue came in below budget for North America - Professional Services,11.0
+2023-02-01,Expense Overspend,Sales / Revenue Operations,784.46,Sales overspent budget in Revenue Operations,12.0
+2023-03-01,Expense Overspend,Engineering / Product Engineering,46874.53,Engineering overspent budget in Product Engineering,1.0
+2023-03-01,Revenue Shortfall,Europe / Enterprise Subscription,29516.63,Revenue came in below budget for Europe - Enterprise Subscription,2.0
+2023-03-01,Expense Overspend,Customer Success / Client Operations,29477.25,Customer Success overspent budget in Client Operations,3.0
+2023-03-01,Expense Overspend,Product / Product Management,23258.57,Product overspent budget in Product Management,4.0
+2023-03-01,Expense Overspend,G&A / Corporate Operations,17921.45,G&A overspent budget in Corporate Operations,5.0
+2023-03-01,Revenue Shortfall,North America / Data & Insights,17635.09,Revenue came in below budget for North America - Data & Insights,6.0
+2023-03-01,Expense Overspend,Sales / Revenue Operations,16302.7,Sales overspent budget in Revenue Operations,7.0
+2023-03-01,Revenue Shortfall,North America / SMB Subscription,12319.76,Revenue came in below budget for North America - SMB Subscription,8.0
+2023-03-01,Revenue Shortfall,APAC / Professional Services,7971.75,Revenue came in below budget for APAC - Professional Services,9.0
+2023-03-01,Revenue Shortfall,LATAM / Data & Insights,5131.66,Revenue came in below budget for LATAM - Data & Insights,10.0
+2023-03-01,Revenue Shortfall,APAC / SMB Subscription,4489.09,Revenue came in below budget for APAC - SMB Subscription,11.0
+2023-03-01,Revenue Shortfall,Europe / Professional Services,4475.69,Revenue came in below budget for Europe - Professional Services,12.0
+2023-03-01,Revenue Shortfall,APAC / Data & Insights,2271.16,Revenue came in below budget for APAC - Data & Insights,13.0
+2023-03-01,Revenue Shortfall,LATAM / Professional Services,1773.71,Revenue came in below budget for LATAM - Professional Services,14.0
+2023-04-01,Revenue Shortfall,North America / Enterprise Subscription,78108.06,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2023-04-01,Revenue Shortfall,Europe / Enterprise Subscription,30322.6,Revenue came in below budget for Europe - Enterprise Subscription,2.0
+2023-04-01,Expense Overspend,Sales / Revenue Operations,19987.96,Sales overspent budget in Revenue Operations,3.0
+2023-04-01,Expense Overspend,Customer Success / Client Operations,19328.66,Customer Success overspent budget in Client Operations,4.0
+2023-04-01,Revenue Shortfall,Europe / SMB Subscription,18675.63,Revenue came in below budget for Europe - SMB Subscription,5.0
+2023-04-01,Revenue Shortfall,LATAM / Enterprise Subscription,13296.71,Revenue came in below budget for LATAM - Enterprise Subscription,6.0
+2023-04-01,Revenue Shortfall,APAC / Enterprise Subscription,12280.01,Revenue came in below budget for APAC - Enterprise Subscription,7.0
+2023-04-01,Revenue Shortfall,North America / Professional Services,7287.04,Revenue came in below budget for North America - Professional Services,8.0
+2023-04-01,Expense Overspend,Engineering / Product Engineering,6428.17,Engineering overspent budget in Product Engineering,9.0
+2023-04-01,Revenue Shortfall,North America / Data & Insights,4982.71,Revenue came in below budget for North America - Data & Insights,10.0
+2023-05-01,Revenue Shortfall,North America / Enterprise Subscription,38216.2,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2023-05-01,Revenue Shortfall,LATAM / Enterprise Subscription,22008.55,Revenue came in below budget for LATAM - Enterprise Subscription,2.0
+2023-05-01,Revenue Shortfall,North America / Data & Insights,20808.97,Revenue came in below budget for North America - Data & Insights,3.0
+2023-05-01,Expense Overspend,G&A / Corporate Operations,18116.74,G&A overspent budget in Corporate Operations,4.0
+2023-05-01,Revenue Shortfall,APAC / Enterprise Subscription,16996.65,Revenue came in below budget for APAC - Enterprise Subscription,5.0
+2023-05-01,Revenue Shortfall,Europe / Data & Insights,16590.3,Revenue came in below budget for Europe - Data & Insights,6.0
+2023-05-01,Revenue Shortfall,North America / SMB Subscription,14093.96,Revenue came in below budget for North America - SMB Subscription,7.0
+2023-05-01,Expense Overspend,Product / Product Management,11599.41,Product overspent budget in Product Management,8.0
+2023-05-01,Expense Overspend,Customer Success / Client Operations,10285.19,Customer Success overspent budget in Client Operations,9.0
+2023-05-01,Revenue Shortfall,APAC / SMB Subscription,7745.84,Revenue came in below budget for APAC - SMB Subscription,10.0
+2023-05-01,Expense Overspend,Engineering / Product Engineering,3676.75,Engineering overspent budget in Product Engineering,11.0
+2023-05-01,Revenue Shortfall,LATAM / Data & Insights,1554.09,Revenue came in below budget for LATAM - Data & Insights,12.0
+2023-05-01,Revenue Shortfall,APAC / Data & Insights,785.53,Revenue came in below budget for APAC - Data & Insights,13.0
+2023-05-01,Revenue Shortfall,LATAM / SMB Subscription,427.8,Revenue came in below budget for LATAM - SMB Subscription,14.0
+2023-06-01,Revenue Shortfall,North America / Enterprise Subscription,58312.35,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2023-06-01,Expense Overspend,Engineering / Product Engineering,24704.08,Engineering overspent budget in Product Engineering,2.0
+2023-06-01,Expense Overspend,Sales / Revenue Operations,19290.66,Sales overspent budget in Revenue Operations,3.0
+2023-06-01,Expense Overspend,Customer Success / Client Operations,17834.34,Customer Success overspent budget in Client Operations,4.0
+2023-06-01,Revenue Shortfall,Europe / SMB Subscription,13170.07,Revenue came in below budget for Europe - SMB Subscription,5.0
+2023-06-01,Revenue Shortfall,Europe / Data & Insights,10058.01,Revenue came in below budget for Europe - Data & Insights,6.0
+2023-06-01,Revenue Shortfall,LATAM / Professional Services,5934.42,Revenue came in below budget for LATAM - Professional Services,7.0
+2023-06-01,Revenue Shortfall,Europe / Enterprise Subscription,5205.23,Revenue came in below budget for Europe - Enterprise Subscription,8.0
+2023-06-01,Revenue Shortfall,Europe / Professional Services,4933.75,Revenue came in below budget for Europe - Professional Services,9.0
+2023-06-01,Expense Overspend,G&A / Corporate Operations,3819.05,G&A overspent budget in Corporate Operations,10.0
+2023-06-01,Revenue Shortfall,APAC / Data & Insights,2058.13,Revenue came in below budget for APAC - Data & Insights,11.0
+2023-06-01,Revenue Shortfall,APAC / SMB Subscription,1518.51,Revenue came in below budget for APAC - SMB Subscription,12.0
+2023-07-01,Revenue Shortfall,North America / SMB Subscription,40942.98,Revenue came in below budget for North America - SMB Subscription,1.0
+2023-07-01,Expense Overspend,Product / Product Management,34416.36,Product overspent budget in Product Management,2.0
+2023-07-01,Revenue Shortfall,North America / Enterprise Subscription,23414.28,Revenue came in below budget for North America - Enterprise Subscription,3.0
+2023-07-01,Revenue Shortfall,Europe / Professional Services,22483.34,Revenue came in below budget for Europe - Professional Services,4.0
+2023-07-01,Revenue Shortfall,APAC / Enterprise Subscription,18780.52,Revenue came in below budget for APAC - Enterprise Subscription,5.0
+2023-07-01,Expense Overspend,G&A / Corporate Operations,9466.85,G&A overspent budget in Corporate Operations,6.0
+2023-07-01,Expense Overspend,Sales / Revenue Operations,8824.87,Sales overspent budget in Revenue Operations,7.0
+2023-07-01,Revenue Shortfall,Europe / Data & Insights,6711.78,Revenue came in below budget for Europe - Data & Insights,8.0
+2023-07-01,Expense Overspend,Customer Success / Client Operations,6397.52,Customer Success overspent budget in Client Operations,9.0
+2023-07-01,Expense Overspend,Engineering / Product Engineering,6090.62,Engineering overspent budget in Product Engineering,10.0
+2023-07-01,Revenue Shortfall,APAC / Data & Insights,1659.73,Revenue came in below budget for APAC - Data & Insights,11.0
+2023-07-01,Revenue Shortfall,LATAM / SMB Subscription,1257.13,Revenue came in below budget for LATAM - SMB Subscription,12.0
+2023-07-01,Revenue Shortfall,LATAM / Professional Services,981.98,Revenue came in below budget for LATAM - Professional Services,13.0
+2023-07-01,Revenue Shortfall,North America / Data & Insights,74.12,Revenue came in below budget for North America - Data & Insights,14.0
+2023-08-01,Expense Overspend,G&A / Corporate Operations,45893.55,G&A overspent budget in Corporate Operations,1.0
+2023-08-01,Revenue Shortfall,Europe / Professional Services,23811.98,Revenue came in below budget for Europe - Professional Services,2.0
+2023-08-01,Expense Overspend,Customer Success / Client Operations,23638.48,Customer Success overspent budget in Client Operations,3.0
+2023-08-01,Revenue Shortfall,APAC / SMB Subscription,23007.43,Revenue came in below budget for APAC - SMB Subscription,4.0
+2023-08-01,Revenue Shortfall,North America / Data & Insights,21416.01,Revenue came in below budget for North America - Data & Insights,5.0
+2023-08-01,Expense Overspend,Engineering / Product Engineering,19120.27,Engineering overspent budget in Product Engineering,6.0
+2023-08-01,Revenue Shortfall,APAC / Enterprise Subscription,18962.82,Revenue came in below budget for APAC - Enterprise Subscription,7.0
+2023-08-01,Revenue Shortfall,North America / Professional Services,17203.43,Revenue came in below budget for North America - Professional Services,8.0
+2023-08-01,Expense Overspend,Sales / Revenue Operations,15764.94,Sales overspent budget in Revenue Operations,9.0
+2023-08-01,Revenue Shortfall,Europe / SMB Subscription,14996.45,Revenue came in below budget for Europe - SMB Subscription,10.0
+2023-08-01,Expense Overspend,Marketing / Growth Marketing,13577.89,Marketing overspent budget in Growth Marketing,11.0
+2023-08-01,Revenue Shortfall,Europe / Data & Insights,8551.05,Revenue came in below budget for Europe - Data & Insights,12.0
+2023-08-01,Revenue Shortfall,APAC / Data & Insights,5617.63,Revenue came in below budget for APAC - Data & Insights,13.0
+2023-08-01,Revenue Shortfall,LATAM / SMB Subscription,3029.79,Revenue came in below budget for LATAM - SMB Subscription,14.0
+2023-08-01,Revenue Shortfall,LATAM / Data & Insights,789.67,Revenue came in below budget for LATAM - Data & Insights,15.0
+2023-09-01,Expense Overspend,Engineering / Product Engineering,39387.68,Engineering overspent budget in Product Engineering,1.0
+2023-09-01,Expense Overspend,Sales / Revenue Operations,19975.83,Sales overspent budget in Revenue Operations,2.0
+2023-09-01,Revenue Shortfall,Europe / Data & Insights,5871.89,Revenue came in below budget for Europe - Data & Insights,3.0
+2023-09-01,Revenue Shortfall,APAC / Professional Services,5444.38,Revenue came in below budget for APAC - Professional Services,4.0
+2023-09-01,Expense Overspend,Customer Success / Client Operations,5268.85,Customer Success overspent budget in Client Operations,5.0
+2023-09-01,Expense Overspend,Product / Product Management,5196.95,Product overspent budget in Product Management,6.0
+2023-09-01,Revenue Shortfall,North America / SMB Subscription,5060.11,Revenue came in below budget for North America - SMB Subscription,7.0
+2023-09-01,Revenue Shortfall,LATAM / Professional Services,4980.1,Revenue came in below budget for LATAM - Professional Services,8.0
+2023-09-01,Revenue Shortfall,North America / Professional Services,4855.31,Revenue came in below budget for North America - Professional Services,9.0
+2023-09-01,Revenue Shortfall,APAC / Enterprise Subscription,2127.19,Revenue came in below budget for APAC - Enterprise Subscription,10.0
+2023-10-01,Expense Overspend,Sales / Revenue Operations,51504.67,Sales overspent budget in Revenue Operations,1.0
+2023-10-01,Revenue Shortfall,Europe / SMB Subscription,36933.85,Revenue came in below budget for Europe - SMB Subscription,2.0
+2023-10-01,Revenue Shortfall,North America / Enterprise Subscription,18452.36,Revenue came in below budget for North America - Enterprise Subscription,3.0
+2023-10-01,Expense Overspend,Product / Product Management,18319.75,Product overspent budget in Product Management,4.0
+2023-10-01,Revenue Shortfall,North America / SMB Subscription,9632.09,Revenue came in below budget for North America - SMB Subscription,5.0
+2023-10-01,Expense Overspend,Marketing / Growth Marketing,7914.79,Marketing overspent budget in Growth Marketing,6.0
+2023-10-01,Revenue Shortfall,APAC / SMB Subscription,4474.72,Revenue came in below budget for APAC - SMB Subscription,7.0
+2023-10-01,Revenue Shortfall,North America / Data & Insights,3542.81,Revenue came in below budget for North America - Data & Insights,8.0
+2023-10-01,Revenue Shortfall,APAC / Enterprise Subscription,1355.55,Revenue came in below budget for APAC - Enterprise Subscription,9.0
+2023-10-01,Expense Overspend,Customer Success / Client Operations,191.89,Customer Success overspent budget in Client Operations,10.0
+2023-11-01,Revenue Shortfall,Europe / Enterprise Subscription,41151.52,Revenue came in below budget for Europe - Enterprise Subscription,1.0
+2023-11-01,Expense Overspend,G&A / Corporate Operations,29517.29,G&A overspent budget in Corporate Operations,2.0
+2023-11-01,Revenue Shortfall,North America / Data & Insights,23769.25,Revenue came in below budget for North America - Data & Insights,3.0
+2023-11-01,Revenue Shortfall,APAC / Professional Services,16706.25,Revenue came in below budget for APAC - Professional Services,4.0
+2023-11-01,Expense Overspend,Sales / Revenue Operations,16609.41,Sales overspent budget in Revenue Operations,5.0
+2023-11-01,Revenue Shortfall,APAC / Enterprise Subscription,14995.96,Revenue came in below budget for APAC - Enterprise Subscription,6.0
+2023-11-01,Revenue Shortfall,Europe / Professional Services,8008.07,Revenue came in below budget for Europe - Professional Services,7.0
+2023-11-01,Revenue Shortfall,LATAM / Professional Services,7248.51,Revenue came in below budget for LATAM - Professional Services,8.0
+2023-11-01,Revenue Shortfall,LATAM / SMB Subscription,5024.85,Revenue came in below budget for LATAM - SMB Subscription,9.0
+2023-11-01,Expense Overspend,Customer Success / Client Operations,3500.16,Customer Success overspent budget in Client Operations,10.0
+2023-12-01,Revenue Shortfall,North America / Enterprise Subscription,36839.57,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2023-12-01,Expense Overspend,Customer Success / Client Operations,16903.89,Customer Success overspent budget in Client Operations,2.0
+2023-12-01,Expense Overspend,Product / Product Management,15705.68,Product overspent budget in Product Management,3.0
+2023-12-01,Revenue Shortfall,North America / Data & Insights,13193.64,Revenue came in below budget for North America - Data & Insights,4.0
+2023-12-01,Expense Overspend,Sales / Revenue Operations,7937.29,Sales overspent budget in Revenue Operations,5.0
+2023-12-01,Revenue Shortfall,Europe / Data & Insights,6249.93,Revenue came in below budget for Europe - Data & Insights,6.0
+2023-12-01,Revenue Shortfall,Europe / Enterprise Subscription,5412.75,Revenue came in below budget for Europe - Enterprise Subscription,7.0
+2023-12-01,Revenue Shortfall,LATAM / Data & Insights,5386.86,Revenue came in below budget for LATAM - Data & Insights,8.0
+2023-12-01,Revenue Shortfall,LATAM / Enterprise Subscription,2912.33,Revenue came in below budget for LATAM - Enterprise Subscription,9.0
+2023-12-01,Revenue Shortfall,Europe / Professional Services,1447.65,Revenue came in below budget for Europe - Professional Services,10.0
+2024-01-01,Revenue Shortfall,North America / Enterprise Subscription,104416.13,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2024-01-01,Expense Overspend,Engineering / Product Engineering,89304.32,Engineering overspent budget in Product Engineering,2.0
+2024-01-01,Expense Overspend,Marketing / Growth Marketing,38046.97,Marketing overspent budget in Growth Marketing,3.0
+2024-01-01,Revenue Shortfall,North America / Data & Insights,35677.24,Revenue came in below budget for North America - Data & Insights,4.0
+2024-01-01,Revenue Shortfall,LATAM / Enterprise Subscription,28591.97,Revenue came in below budget for LATAM - Enterprise Subscription,5.0
+2024-01-01,Expense Overspend,G&A / Corporate Operations,17569.53,G&A overspent budget in Corporate Operations,6.0
+2024-01-01,Revenue Shortfall,Europe / Enterprise Subscription,16919.96,Revenue came in below budget for Europe - Enterprise Subscription,7.0
+2024-01-01,Expense Overspend,Sales / Revenue Operations,14969.39,Sales overspent budget in Revenue Operations,8.0
+2024-01-01,Revenue Shortfall,LATAM / SMB Subscription,12869.76,Revenue came in below budget for LATAM - SMB Subscription,9.0
+2024-01-01,Revenue Shortfall,APAC / Enterprise Subscription,4099.24,Revenue came in below budget for APAC - Enterprise Subscription,10.0
+2024-01-01,Revenue Shortfall,LATAM / Professional Services,3175.12,Revenue came in below budget for LATAM - Professional Services,11.0
+2024-01-01,Expense Overspend,Product / Product Management,1056.03,Product overspent budget in Product Management,12.0
+2024-01-01,Revenue Shortfall,LATAM / Data & Insights,967.94,Revenue came in below budget for LATAM - Data & Insights,13.0
+2024-01-01,Revenue Shortfall,APAC / Data & Insights,635.36,Revenue came in below budget for APAC - Data & Insights,14.0
+2024-02-01,Expense Overspend,Engineering / Product Engineering,68838.47,Engineering overspent budget in Product Engineering,1.0
+2024-02-01,Revenue Shortfall,Europe / Enterprise Subscription,32186.5,Revenue came in below budget for Europe - Enterprise Subscription,2.0
+2024-02-01,Expense Overspend,G&A / Corporate Operations,23932.95,G&A overspent budget in Corporate Operations,3.0
+2024-02-01,Expense Overspend,Product / Product Management,20937.86,Product overspent budget in Product Management,4.0
+2024-02-01,Revenue Shortfall,Europe / Professional Services,16345.51,Revenue came in below budget for Europe - Professional Services,5.0
+2024-02-01,Expense Overspend,Marketing / Growth Marketing,13806.82,Marketing overspent budget in Growth Marketing,6.0
+2024-02-01,Revenue Shortfall,North America / Data & Insights,9276.21,Revenue came in below budget for North America - Data & Insights,7.0
+2024-02-01,Revenue Shortfall,Europe / Data & Insights,8931.3,Revenue came in below budget for Europe - Data & Insights,8.0
+2024-02-01,Expense Overspend,Sales / Revenue Operations,8677.16,Sales overspent budget in Revenue Operations,9.0
+2024-02-01,Revenue Shortfall,APAC / Professional Services,4017.9,Revenue came in below budget for APAC - Professional Services,10.0
+2024-02-01,Revenue Shortfall,APAC / Data & Insights,3573.76,Revenue came in below budget for APAC - Data & Insights,11.0
+2024-02-01,Revenue Shortfall,APAC / Enterprise Subscription,3023.15,Revenue came in below budget for APAC - Enterprise Subscription,12.0
+2024-02-01,Revenue Shortfall,North America / SMB Subscription,2757.36,Revenue came in below budget for North America - SMB Subscription,13.0
+2024-02-01,Revenue Shortfall,LATAM / Enterprise Subscription,2743.33,Revenue came in below budget for LATAM - Enterprise Subscription,14.0
+2024-02-01,Revenue Shortfall,LATAM / Professional Services,1621.5,Revenue came in below budget for LATAM - Professional Services,15.0
+2024-03-01,Expense Overspend,Engineering / Product Engineering,51137.3,Engineering overspent budget in Product Engineering,1.0
+2024-03-01,Revenue Shortfall,APAC / Enterprise Subscription,26036.84,Revenue came in below budget for APAC - Enterprise Subscription,2.0
+2024-03-01,Expense Overspend,G&A / Corporate Operations,26004.29,G&A overspent budget in Corporate Operations,3.0
+2024-03-01,Revenue Shortfall,Europe / Data & Insights,13785.37,Revenue came in below budget for Europe - Data & Insights,4.0
+2024-03-01,Expense Overspend,Sales / Revenue Operations,6094.89,Sales overspent budget in Revenue Operations,5.0
+2024-03-01,Revenue Shortfall,North America / SMB Subscription,5284.32,Revenue came in below budget for North America - SMB Subscription,6.0
+2024-03-01,Revenue Shortfall,LATAM / Enterprise Subscription,4165.0,Revenue came in below budget for LATAM - Enterprise Subscription,7.0
+2024-03-01,Revenue Shortfall,APAC / SMB Subscription,4135.06,Revenue came in below budget for APAC - SMB Subscription,8.0
+2024-04-01,Revenue Shortfall,LATAM / Enterprise Subscription,43866.73,Revenue came in below budget for LATAM - Enterprise Subscription,1.0
+2024-04-01,Revenue Shortfall,APAC / Enterprise Subscription,43113.13,Revenue came in below budget for APAC - Enterprise Subscription,2.0
+2024-04-01,Revenue Shortfall,Europe / Enterprise Subscription,31500.92,Revenue came in below budget for Europe - Enterprise Subscription,3.0
+2024-04-01,Revenue Shortfall,APAC / SMB Subscription,28366.08,Revenue came in below budget for APAC - SMB Subscription,4.0
+2024-04-01,Expense Overspend,Sales / Revenue Operations,22758.74,Sales overspent budget in Revenue Operations,5.0
+2024-04-01,Expense Overspend,Product / Product Management,13100.88,Product overspent budget in Product Management,6.0
+2024-04-01,Revenue Shortfall,North America / Data & Insights,12417.15,Revenue came in below budget for North America - Data & Insights,7.0
+2024-04-01,Expense Overspend,G&A / Corporate Operations,7745.59,G&A overspent budget in Corporate Operations,8.0
+2024-04-01,Expense Overspend,Customer Success / Client Operations,6153.01,Customer Success overspent budget in Client Operations,9.0
+2024-04-01,Revenue Shortfall,LATAM / Data & Insights,5470.53,Revenue came in below budget for LATAM - Data & Insights,10.0
+2024-04-01,Revenue Shortfall,APAC / Data & Insights,4011.46,Revenue came in below budget for APAC - Data & Insights,11.0
+2024-04-01,Revenue Shortfall,Europe / Professional Services,3455.42,Revenue came in below budget for Europe - Professional Services,12.0
+2024-04-01,Revenue Shortfall,Europe / Data & Insights,2704.44,Revenue came in below budget for Europe - Data & Insights,13.0
+2024-04-01,Revenue Shortfall,LATAM / Professional Services,2701.93,Revenue came in below budget for LATAM - Professional Services,14.0
+2024-04-01,Revenue Shortfall,North America / Professional Services,1246.28,Revenue came in below budget for North America - Professional Services,15.0
+2024-05-01,Revenue Shortfall,Europe / Enterprise Subscription,36253.71,Revenue came in below budget for Europe - Enterprise Subscription,1.0
+2024-05-01,Revenue Shortfall,LATAM / SMB Subscription,21661.54,Revenue came in below budget for LATAM - SMB Subscription,2.0
+2024-05-01,Expense Overspend,Marketing / Growth Marketing,20458.27,Marketing overspent budget in Growth Marketing,3.0
+2024-05-01,Expense Overspend,Product / Product Management,15086.79,Product overspent budget in Product Management,4.0
+2024-05-01,Expense Overspend,Engineering / Product Engineering,14505.87,Engineering overspent budget in Product Engineering,5.0
+2024-05-01,Revenue Shortfall,APAC / Data & Insights,8818.67,Revenue came in below budget for APAC - Data & Insights,6.0
+2024-05-01,Revenue Shortfall,LATAM / Professional Services,8226.02,Revenue came in below budget for LATAM - Professional Services,7.0
+2024-05-01,Revenue Shortfall,LATAM / Enterprise Subscription,8053.38,Revenue came in below budget for LATAM - Enterprise Subscription,8.0
+2024-05-01,Revenue Shortfall,APAC / SMB Subscription,5207.11,Revenue came in below budget for APAC - SMB Subscription,9.0
+2024-05-01,Expense Overspend,G&A / Corporate Operations,4202.53,G&A overspent budget in Corporate Operations,10.0
+2024-05-01,Revenue Shortfall,APAC / Professional Services,3480.82,Revenue came in below budget for APAC - Professional Services,11.0
+2024-06-01,Expense Overspend,Engineering / Product Engineering,72898.18,Engineering overspent budget in Product Engineering,1.0
+2024-06-01,Expense Overspend,Marketing / Growth Marketing,45234.96,Marketing overspent budget in Growth Marketing,2.0
+2024-06-01,Expense Overspend,Product / Product Management,22513.33,Product overspent budget in Product Management,3.0
+2024-06-01,Revenue Shortfall,North America / Enterprise Subscription,17388.8,Revenue came in below budget for North America - Enterprise Subscription,4.0
+2024-06-01,Expense Overspend,Customer Success / Client Operations,16352.7,Customer Success overspent budget in Client Operations,5.0
+2024-06-01,Revenue Shortfall,LATAM / SMB Subscription,13233.51,Revenue came in below budget for LATAM - SMB Subscription,6.0
+2024-06-01,Expense Overspend,Sales / Revenue Operations,12348.5,Sales overspent budget in Revenue Operations,7.0
+2024-06-01,Revenue Shortfall,Europe / Data & Insights,11125.2,Revenue came in below budget for Europe - Data & Insights,8.0
+2024-06-01,Revenue Shortfall,Europe / Professional Services,9281.14,Revenue came in below budget for Europe - Professional Services,9.0
+2024-06-01,Revenue Shortfall,Europe / SMB Subscription,1989.74,Revenue came in below budget for Europe - SMB Subscription,10.0
+2024-06-01,Revenue Shortfall,APAC / Enterprise Subscription,1697.73,Revenue came in below budget for APAC - Enterprise Subscription,11.0
+2024-06-01,Expense Overspend,G&A / Corporate Operations,1305.42,G&A overspent budget in Corporate Operations,12.0
+2024-06-01,Revenue Shortfall,APAC / Data & Insights,908.22,Revenue came in below budget for APAC - Data & Insights,13.0
+2024-07-01,Expense Overspend,Engineering / Product Engineering,61627.01,Engineering overspent budget in Product Engineering,1.0
+2024-07-01,Revenue Shortfall,North America / Professional Services,54506.65,Revenue came in below budget for North America - Professional Services,2.0
+2024-07-01,Expense Overspend,Sales / Revenue Operations,28650.24,Sales overspent budget in Revenue Operations,3.0
+2024-07-01,Revenue Shortfall,Europe / SMB Subscription,27148.74,Revenue came in below budget for Europe - SMB Subscription,4.0
+2024-07-01,Revenue Shortfall,APAC / SMB Subscription,18810.2,Revenue came in below budget for APAC - SMB Subscription,5.0
+2024-07-01,Revenue Shortfall,Europe / Data & Insights,11036.57,Revenue came in below budget for Europe - Data & Insights,6.0
+2024-07-01,Revenue Shortfall,North America / SMB Subscription,10593.61,Revenue came in below budget for North America - SMB Subscription,7.0
+2024-07-01,Revenue Shortfall,North America / Data & Insights,4822.67,Revenue came in below budget for North America - Data & Insights,8.0
+2024-07-01,Expense Overspend,Marketing / Growth Marketing,4485.79,Marketing overspent budget in Growth Marketing,9.0
+2024-07-01,Revenue Shortfall,APAC / Professional Services,4121.06,Revenue came in below budget for APAC - Professional Services,10.0
+2024-07-01,Revenue Shortfall,LATAM / Professional Services,3167.72,Revenue came in below budget for LATAM - Professional Services,11.0
+2024-08-01,Revenue Shortfall,North America / Enterprise Subscription,117985.07,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2024-08-01,Expense Overspend,Engineering / Product Engineering,56337.66,Engineering overspent budget in Product Engineering,2.0
+2024-08-01,Revenue Shortfall,North America / SMB Subscription,43819.49,Revenue came in below budget for North America - SMB Subscription,3.0
+2024-08-01,Revenue Shortfall,North America / Professional Services,32519.23,Revenue came in below budget for North America - Professional Services,4.0
+2024-08-01,Expense Overspend,Product / Product Management,20941.69,Product overspent budget in Product Management,5.0
+2024-08-01,Expense Overspend,Marketing / Growth Marketing,16877.74,Marketing overspent budget in Growth Marketing,6.0
+2024-08-01,Revenue Shortfall,Europe / SMB Subscription,14306.46,Revenue came in below budget for Europe - SMB Subscription,7.0
+2024-08-01,Revenue Shortfall,North America / Data & Insights,13371.8,Revenue came in below budget for North America - Data & Insights,8.0
+2024-08-01,Expense Overspend,G&A / Corporate Operations,9288.29,G&A overspent budget in Corporate Operations,9.0
+2024-08-01,Revenue Shortfall,APAC / Professional Services,8318.74,Revenue came in below budget for APAC - Professional Services,10.0
+2024-08-01,Revenue Shortfall,LATAM / Enterprise Subscription,6240.79,Revenue came in below budget for LATAM - Enterprise Subscription,11.0
+2024-08-01,Revenue Shortfall,APAC / SMB Subscription,6103.81,Revenue came in below budget for APAC - SMB Subscription,12.0
+2024-08-01,Revenue Shortfall,Europe / Professional Services,5535.67,Revenue came in below budget for Europe - Professional Services,13.0
+2024-08-01,Revenue Shortfall,LATAM / SMB Subscription,2893.87,Revenue came in below budget for LATAM - SMB Subscription,14.0
+2024-08-01,Revenue Shortfall,LATAM / Professional Services,954.36,Revenue came in below budget for LATAM - Professional Services,15.0
+2024-08-01,Expense Overspend,Sales / Revenue Operations,338.05,Sales overspent budget in Revenue Operations,16.0
+2024-09-01,Revenue Shortfall,North America / Enterprise Subscription,105624.59,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2024-09-01,Expense Overspend,Engineering / Product Engineering,87960.82,Engineering overspent budget in Product Engineering,2.0
+2024-09-01,Expense Overspend,Marketing / Growth Marketing,49423.7,Marketing overspent budget in Growth Marketing,3.0
+2024-09-01,Revenue Shortfall,APAC / Enterprise Subscription,21498.49,Revenue came in below budget for APAC - Enterprise Subscription,4.0
+2024-09-01,Revenue Shortfall,LATAM / SMB Subscription,15205.93,Revenue came in below budget for LATAM - SMB Subscription,5.0
+2024-09-01,Expense Overspend,Customer Success / Client Operations,15057.56,Customer Success overspent budget in Client Operations,6.0
+2024-09-01,Expense Overspend,Sales / Revenue Operations,14128.22,Sales overspent budget in Revenue Operations,7.0
+2024-09-01,Revenue Shortfall,APAC / Professional Services,13658.2,Revenue came in below budget for APAC - Professional Services,8.0
+2024-09-01,Expense Overspend,Product / Product Management,10949.34,Product overspent budget in Product Management,9.0
+2024-09-01,Revenue Shortfall,North America / Professional Services,7780.07,Revenue came in below budget for North America - Professional Services,10.0
+2024-09-01,Revenue Shortfall,APAC / Data & Insights,5287.3,Revenue came in below budget for APAC - Data & Insights,11.0
+2024-09-01,Revenue Shortfall,LATAM / Professional Services,2652.32,Revenue came in below budget for LATAM - Professional Services,12.0
+2024-09-01,Revenue Shortfall,LATAM / Enterprise Subscription,1268.66,Revenue came in below budget for LATAM - Enterprise Subscription,13.0
+2024-10-01,Revenue Shortfall,North America / Enterprise Subscription,50944.96,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2024-10-01,Revenue Shortfall,LATAM / Enterprise Subscription,36429.78,Revenue came in below budget for LATAM - Enterprise Subscription,2.0
+2024-10-01,Expense Overspend,Marketing / Growth Marketing,28128.68,Marketing overspent budget in Growth Marketing,3.0
+2024-10-01,Expense Overspend,G&A / Corporate Operations,27359.05,G&A overspent budget in Corporate Operations,4.0
+2024-10-01,Expense Overspend,Product / Product Management,15704.2,Product overspent budget in Product Management,5.0
+2024-10-01,Revenue Shortfall,APAC / Enterprise Subscription,11460.64,Revenue came in below budget for APAC - Enterprise Subscription,6.0
+2024-10-01,Revenue Shortfall,LATAM / SMB Subscription,8696.44,Revenue came in below budget for LATAM - SMB Subscription,7.0
+2024-10-01,Revenue Shortfall,Europe / Professional Services,5576.68,Revenue came in below budget for Europe - Professional Services,8.0
+2024-10-01,Revenue Shortfall,APAC / Data & Insights,4890.54,Revenue came in below budget for APAC - Data & Insights,9.0
+2024-10-01,Revenue Shortfall,LATAM / Data & Insights,3833.02,Revenue came in below budget for LATAM - Data & Insights,10.0
+2024-10-01,Expense Overspend,Customer Success / Client Operations,696.12,Customer Success overspent budget in Client Operations,11.0
+2024-11-01,Expense Overspend,Engineering / Product Engineering,44398.67,Engineering overspent budget in Product Engineering,1.0
+2024-11-01,Revenue Shortfall,Europe / Enterprise Subscription,41016.42,Revenue came in below budget for Europe - Enterprise Subscription,2.0
+2024-11-01,Revenue Shortfall,North America / SMB Subscription,39708.35,Revenue came in below budget for North America - SMB Subscription,3.0
+2024-11-01,Revenue Shortfall,APAC / SMB Subscription,34810.45,Revenue came in below budget for APAC - SMB Subscription,4.0
+2024-11-01,Expense Overspend,Marketing / Growth Marketing,26053.26,Marketing overspent budget in Growth Marketing,5.0
+2024-11-01,Revenue Shortfall,Europe / Professional Services,20216.9,Revenue came in below budget for Europe - Professional Services,6.0
+2024-11-01,Revenue Shortfall,LATAM / Enterprise Subscription,18072.19,Revenue came in below budget for LATAM - Enterprise Subscription,7.0
+2024-11-01,Expense Overspend,Sales / Revenue Operations,7997.38,Sales overspent budget in Revenue Operations,8.0
+2024-11-01,Revenue Shortfall,APAC / Professional Services,7594.1,Revenue came in below budget for APAC - Professional Services,9.0
+2024-11-01,Revenue Shortfall,North America / Professional Services,5208.4,Revenue came in below budget for North America - Professional Services,10.0
+2024-11-01,Revenue Shortfall,Europe / SMB Subscription,5053.27,Revenue came in below budget for Europe - SMB Subscription,11.0
+2024-11-01,Revenue Shortfall,Europe / Data & Insights,3293.76,Revenue came in below budget for Europe - Data & Insights,12.0
+2024-11-01,Revenue Shortfall,APAC / Enterprise Subscription,2425.33,Revenue came in below budget for APAC - Enterprise Subscription,13.0
+2024-11-01,Expense Overspend,Product / Product Management,336.05,Product overspent budget in Product Management,14.0
+2024-11-01,Expense Overspend,G&A / Corporate Operations,272.69,G&A overspent budget in Corporate Operations,15.0
+2024-11-01,Revenue Shortfall,North America / Data & Insights,232.87,Revenue came in below budget for North America - Data & Insights,16.0
+2024-12-01,Revenue Shortfall,North America / SMB Subscription,71310.0,Revenue came in below budget for North America - SMB Subscription,1.0
+2024-12-01,Expense Overspend,Customer Success / Client Operations,36344.76,Customer Success overspent budget in Client Operations,2.0
+2024-12-01,Revenue Shortfall,APAC / Enterprise Subscription,25839.77,Revenue came in below budget for APAC - Enterprise Subscription,3.0
+2024-12-01,Expense Overspend,Engineering / Product Engineering,24578.44,Engineering overspent budget in Product Engineering,4.0
+2024-12-01,Expense Overspend,G&A / Corporate Operations,23795.89,G&A overspent budget in Corporate Operations,5.0
+2024-12-01,Revenue Shortfall,North America / Data & Insights,17581.25,Revenue came in below budget for North America - Data & Insights,6.0
+2024-12-01,Expense Overspend,Sales / Revenue Operations,9659.8,Sales overspent budget in Revenue Operations,7.0
+2024-12-01,Revenue Shortfall,APAC / Professional Services,7649.28,Revenue came in below budget for APAC - Professional Services,8.0
+2024-12-01,Revenue Shortfall,Europe / Professional Services,4852.2,Revenue came in below budget for Europe - Professional Services,9.0
+2025-01-01,Revenue Shortfall,North America / Enterprise Subscription,93960.8,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2025-01-01,Revenue Shortfall,Europe / Enterprise Subscription,44153.06,Revenue came in below budget for Europe - Enterprise Subscription,2.0
+2025-01-01,Expense Overspend,G&A / Corporate Operations,41653.03,G&A overspent budget in Corporate Operations,3.0
+2025-01-01,Revenue Shortfall,LATAM / SMB Subscription,17466.71,Revenue came in below budget for LATAM - SMB Subscription,4.0
+2025-01-01,Revenue Shortfall,APAC / Professional Services,9076.02,Revenue came in below budget for APAC - Professional Services,5.0
+2025-01-01,Revenue Shortfall,APAC / Data & Insights,4540.6,Revenue came in below budget for APAC - Data & Insights,6.0
+2025-01-01,Expense Overspend,Customer Success / Client Operations,3175.07,Customer Success overspent budget in Client Operations,7.0
+2025-01-01,Revenue Shortfall,Europe / Professional Services,674.59,Revenue came in below budget for Europe - Professional Services,8.0
+2025-02-01,Revenue Shortfall,North America / Enterprise Subscription,62617.86,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2025-02-01,Revenue Shortfall,LATAM / Enterprise Subscription,30351.8,Revenue came in below budget for LATAM - Enterprise Subscription,2.0
+2025-02-01,Expense Overspend,Engineering / Product Engineering,28957.61,Engineering overspent budget in Product Engineering,3.0
+2025-02-01,Expense Overspend,G&A / Corporate Operations,24732.68,G&A overspent budget in Corporate Operations,4.0
+2025-02-01,Revenue Shortfall,Europe / Enterprise Subscription,13005.19,Revenue came in below budget for Europe - Enterprise Subscription,5.0
+2025-02-01,Revenue Shortfall,APAC / Enterprise Subscription,10425.68,Revenue came in below budget for APAC - Enterprise Subscription,6.0
+2025-02-01,Revenue Shortfall,APAC / Data & Insights,7138.07,Revenue came in below budget for APAC - Data & Insights,7.0
+2025-02-01,Revenue Shortfall,Europe / Data & Insights,6062.41,Revenue came in below budget for Europe - Data & Insights,8.0
+2025-02-01,Expense Overspend,Marketing / Growth Marketing,5735.19,Marketing overspent budget in Growth Marketing,9.0
+2025-02-01,Revenue Shortfall,Europe / SMB Subscription,4984.89,Revenue came in below budget for Europe - SMB Subscription,10.0
+2025-02-01,Revenue Shortfall,APAC / Professional Services,4072.74,Revenue came in below budget for APAC - Professional Services,11.0
+2025-02-01,Revenue Shortfall,North America / Data & Insights,2320.61,Revenue came in below budget for North America - Data & Insights,12.0
+2025-02-01,Expense Overspend,Product / Product Management,1271.72,Product overspent budget in Product Management,13.0
+2025-03-01,Revenue Shortfall,North America / Enterprise Subscription,84339.96,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2025-03-01,Expense Overspend,Engineering / Product Engineering,54396.68,Engineering overspent budget in Product Engineering,2.0
+2025-03-01,Revenue Shortfall,North America / SMB Subscription,34078.9,Revenue came in below budget for North America - SMB Subscription,3.0
+2025-03-01,Revenue Shortfall,LATAM / SMB Subscription,19288.47,Revenue came in below budget for LATAM - SMB Subscription,4.0
+2025-03-01,Revenue Shortfall,APAC / Enterprise Subscription,18512.22,Revenue came in below budget for APAC - Enterprise Subscription,5.0
+2025-03-01,Expense Overspend,Marketing / Growth Marketing,12860.18,Marketing overspent budget in Growth Marketing,6.0
+2025-03-01,Revenue Shortfall,North America / Professional Services,7961.84,Revenue came in below budget for North America - Professional Services,7.0
+2025-03-01,Expense Overspend,Sales / Revenue Operations,6944.24,Sales overspent budget in Revenue Operations,8.0
+2025-03-01,Revenue Shortfall,APAC / SMB Subscription,5732.3,Revenue came in below budget for APAC - SMB Subscription,9.0
+2025-03-01,Revenue Shortfall,LATAM / Professional Services,5272.17,Revenue came in below budget for LATAM - Professional Services,10.0
+2025-03-01,Expense Overspend,G&A / Corporate Operations,1364.34,G&A overspent budget in Corporate Operations,11.0
+2025-03-01,Revenue Shortfall,LATAM / Data & Insights,227.61,Revenue came in below budget for LATAM - Data & Insights,12.0
+2025-04-01,Revenue Shortfall,North America / SMB Subscription,61307.88,Revenue came in below budget for North America - SMB Subscription,1.0
+2025-04-01,Revenue Shortfall,North America / Enterprise Subscription,52337.52,Revenue came in below budget for North America - Enterprise Subscription,2.0
+2025-04-01,Revenue Shortfall,Europe / SMB Subscription,47531.18,Revenue came in below budget for Europe - SMB Subscription,3.0
+2025-04-01,Expense Overspend,Marketing / Growth Marketing,47483.21,Marketing overspent budget in Growth Marketing,4.0
+2025-04-01,Revenue Shortfall,LATAM / Enterprise Subscription,41535.62,Revenue came in below budget for LATAM - Enterprise Subscription,5.0
+2025-04-01,Expense Overspend,Sales / Revenue Operations,18915.19,Sales overspent budget in Revenue Operations,6.0
+2025-04-01,Revenue Shortfall,APAC / SMB Subscription,17763.57,Revenue came in below budget for APAC - SMB Subscription,7.0
+2025-04-01,Revenue Shortfall,North America / Professional Services,14403.34,Revenue came in below budget for North America - Professional Services,8.0
+2025-04-01,Revenue Shortfall,APAC / Professional Services,9423.62,Revenue came in below budget for APAC - Professional Services,9.0
+2025-04-01,Revenue Shortfall,LATAM / SMB Subscription,8371.32,Revenue came in below budget for LATAM - SMB Subscription,10.0
+2025-04-01,Expense Overspend,Customer Success / Client Operations,7812.82,Customer Success overspent budget in Client Operations,11.0
+2025-04-01,Expense Overspend,G&A / Corporate Operations,3384.57,G&A overspent budget in Corporate Operations,12.0
+2025-04-01,Revenue Shortfall,LATAM / Professional Services,2212.57,Revenue came in below budget for LATAM - Professional Services,13.0
+2025-04-01,Revenue Shortfall,LATAM / Data & Insights,1225.87,Revenue came in below budget for LATAM - Data & Insights,14.0
+2025-04-01,Revenue Shortfall,Europe / Data & Insights,1016.69,Revenue came in below budget for Europe - Data & Insights,15.0
+2025-04-01,Revenue Shortfall,Europe / Professional Services,166.86,Revenue came in below budget for Europe - Professional Services,16.0
+2025-05-01,Expense Overspend,Marketing / Growth Marketing,57640.28,Marketing overspent budget in Growth Marketing,1.0
+2025-05-01,Revenue Shortfall,North America / Enterprise Subscription,51480.07,Revenue came in below budget for North America - Enterprise Subscription,2.0
+2025-05-01,Revenue Shortfall,Europe / Enterprise Subscription,26060.29,Revenue came in below budget for Europe - Enterprise Subscription,3.0
+2025-05-01,Expense Overspend,Product / Product Management,16708.12,Product overspent budget in Product Management,4.0
+2025-05-01,Revenue Shortfall,Europe / Data & Insights,7457.27,Revenue came in below budget for Europe - Data & Insights,5.0
+2025-05-01,Revenue Shortfall,Europe / SMB Subscription,5714.82,Revenue came in below budget for Europe - SMB Subscription,6.0
+2025-05-01,Revenue Shortfall,LATAM / Enterprise Subscription,5326.03,Revenue came in below budget for LATAM - Enterprise Subscription,7.0
+2025-05-01,Revenue Shortfall,North America / Data & Insights,2659.27,Revenue came in below budget for North America - Data & Insights,8.0
+2025-05-01,Revenue Shortfall,LATAM / Professional Services,908.37,Revenue came in below budget for LATAM - Professional Services,9.0
+2025-05-01,Revenue Shortfall,LATAM / Data & Insights,673.43,Revenue came in below budget for LATAM - Data & Insights,10.0
+2025-06-01,Revenue Shortfall,Europe / Enterprise Subscription,48635.3,Revenue came in below budget for Europe - Enterprise Subscription,1.0
+2025-06-01,Expense Overspend,G&A / Corporate Operations,30570.9,G&A overspent budget in Corporate Operations,2.0
+2025-06-01,Revenue Shortfall,North America / Enterprise Subscription,17846.65,Revenue came in below budget for North America - Enterprise Subscription,3.0
+2025-06-01,Expense Overspend,Product / Product Management,12331.02,Product overspent budget in Product Management,4.0
+2025-06-01,Revenue Shortfall,APAC / Data & Insights,10977.26,Revenue came in below budget for APAC - Data & Insights,5.0
+2025-06-01,Expense Overspend,Customer Success / Client Operations,9223.49,Customer Success overspent budget in Client Operations,6.0
+2025-06-01,Revenue Shortfall,LATAM / SMB Subscription,7285.74,Revenue came in below budget for LATAM - SMB Subscription,7.0
+2025-06-01,Expense Overspend,Engineering / Product Engineering,3839.09,Engineering overspent budget in Product Engineering,8.0
+2025-06-01,Revenue Shortfall,LATAM / Professional Services,2669.92,Revenue came in below budget for LATAM - Professional Services,9.0
+2025-06-01,Revenue Shortfall,LATAM / Data & Insights,7.69,Revenue came in below budget for LATAM - Data & Insights,10.0
+2025-07-01,Revenue Shortfall,North America / SMB Subscription,91128.18,Revenue came in below budget for North America - SMB Subscription,1.0
+2025-07-01,Expense Overspend,G&A / Corporate Operations,48441.08,G&A overspent budget in Corporate Operations,2.0
+2025-07-01,Revenue Shortfall,APAC / SMB Subscription,38293.34,Revenue came in below budget for APAC - SMB Subscription,3.0
+2025-07-01,Revenue Shortfall,Europe / SMB Subscription,32665.96,Revenue came in below budget for Europe - SMB Subscription,4.0
+2025-07-01,Expense Overspend,Marketing / Growth Marketing,26429.45,Marketing overspent budget in Growth Marketing,5.0
+2025-07-01,Revenue Shortfall,North America / Professional Services,26142.76,Revenue came in below budget for North America - Professional Services,6.0
+2025-07-01,Revenue Shortfall,LATAM / SMB Subscription,23948.1,Revenue came in below budget for LATAM - SMB Subscription,7.0
+2025-07-01,Revenue Shortfall,North America / Data & Insights,22775.25,Revenue came in below budget for North America - Data & Insights,8.0
+2025-07-01,Expense Overspend,Product / Product Management,20599.59,Product overspent budget in Product Management,9.0
+2025-07-01,Revenue Shortfall,Europe / Data & Insights,19587.39,Revenue came in below budget for Europe - Data & Insights,10.0
+2025-07-01,Revenue Shortfall,LATAM / Enterprise Subscription,11052.56,Revenue came in below budget for LATAM - Enterprise Subscription,11.0
+2025-07-01,Revenue Shortfall,Europe / Professional Services,10994.8,Revenue came in below budget for Europe - Professional Services,12.0
+2025-07-01,Revenue Shortfall,LATAM / Professional Services,7148.19,Revenue came in below budget for LATAM - Professional Services,13.0
+2025-07-01,Revenue Shortfall,Europe / Enterprise Subscription,5589.74,Revenue came in below budget for Europe - Enterprise Subscription,14.0
+2025-07-01,Revenue Shortfall,APAC / Data & Insights,5039.83,Revenue came in below budget for APAC - Data & Insights,15.0
+2025-07-01,Revenue Shortfall,APAC / Professional Services,4997.26,Revenue came in below budget for APAC - Professional Services,16.0
+2025-07-01,Revenue Shortfall,LATAM / Data & Insights,733.83,Revenue came in below budget for LATAM - Data & Insights,17.0
+2025-08-01,Expense Overspend,Engineering / Product Engineering,85038.52,Engineering overspent budget in Product Engineering,1.0
+2025-08-01,Revenue Shortfall,North America / SMB Subscription,52216.51,Revenue came in below budget for North America - SMB Subscription,2.0
+2025-08-01,Revenue Shortfall,Europe / Enterprise Subscription,45409.08,Revenue came in below budget for Europe - Enterprise Subscription,3.0
+2025-08-01,Revenue Shortfall,Europe / SMB Subscription,36176.55,Revenue came in below budget for Europe - SMB Subscription,4.0
+2025-08-01,Revenue Shortfall,APAC / SMB Subscription,35796.5,Revenue came in below budget for APAC - SMB Subscription,5.0
+2025-08-01,Expense Overspend,Marketing / Growth Marketing,20993.6,Marketing overspent budget in Growth Marketing,6.0
+2025-08-01,Expense Overspend,Product / Product Management,17366.35,Product overspent budget in Product Management,7.0
+2025-08-01,Revenue Shortfall,LATAM / Enterprise Subscription,16361.1,Revenue came in below budget for LATAM - Enterprise Subscription,8.0
+2025-08-01,Revenue Shortfall,North America / Data & Insights,16245.31,Revenue came in below budget for North America - Data & Insights,9.0
+2025-08-01,Revenue Shortfall,Europe / Professional Services,13996.07,Revenue came in below budget for Europe - Professional Services,10.0
+2025-08-01,Revenue Shortfall,LATAM / SMB Subscription,13710.62,Revenue came in below budget for LATAM - SMB Subscription,11.0
+2025-08-01,Revenue Shortfall,APAC / Professional Services,13135.88,Revenue came in below budget for APAC - Professional Services,12.0
+2025-08-01,Revenue Shortfall,APAC / Data & Insights,12850.92,Revenue came in below budget for APAC - Data & Insights,13.0
+2025-08-01,Revenue Shortfall,APAC / Enterprise Subscription,7913.8,Revenue came in below budget for APAC - Enterprise Subscription,14.0
+2025-08-01,Expense Overspend,Sales / Revenue Operations,7736.63,Sales overspent budget in Revenue Operations,15.0
+2025-08-01,Revenue Shortfall,North America / Professional Services,7124.62,Revenue came in below budget for North America - Professional Services,16.0
+2025-08-01,Expense Overspend,Customer Success / Client Operations,6041.72,Customer Success overspent budget in Client Operations,17.0
+2025-08-01,Revenue Shortfall,LATAM / Professional Services,3820.58,Revenue came in below budget for LATAM - Professional Services,18.0
+2025-08-01,Revenue Shortfall,Europe / Data & Insights,3770.51,Revenue came in below budget for Europe - Data & Insights,19.0
+2025-08-01,Revenue Shortfall,LATAM / Data & Insights,2505.05,Revenue came in below budget for LATAM - Data & Insights,20.0
+2025-09-01,Revenue Shortfall,North America / Enterprise Subscription,235202.69,Revenue came in below budget for North America - Enterprise Subscription,1.0
+2025-09-01,Revenue Shortfall,North America / SMB Subscription,145602.63,Revenue came in below budget for North America - SMB Subscription,2.0
+2025-09-01,Revenue Shortfall,Europe / Enterprise Subscription,63795.67,Revenue came in below budget for Europe - Enterprise Subscription,3.0
+2025-09-01,Expense Overspend,Engineering / Product Engineering,59879.58,Engineering overspent budget in Product Engineering,4.0
+2025-09-01,Revenue Shortfall,APAC / Enterprise Subscription,52391.61,Revenue came in below budget for APAC - Enterprise Subscription,5.0
+2025-09-01,Revenue Shortfall,Europe / SMB Subscription,39293.42,Revenue came in below budget for Europe - SMB Subscription,6.0
+2025-09-01,Revenue Shortfall,LATAM / Enterprise Subscription,32945.47,Revenue came in below budget for LATAM - Enterprise Subscription,7.0
+2025-09-01,Revenue Shortfall,North America / Professional Services,25854.51,Revenue came in below budget for North America - Professional Services,8.0
+2025-09-01,Revenue Shortfall,LATAM / SMB Subscription,22766.01,Revenue came in below budget for LATAM - SMB Subscription,9.0
+2025-09-01,Revenue Shortfall,APAC / Professional Services,15466.15,Revenue came in below budget for APAC - Professional Services,10.0
+2025-09-01,Expense Overspend,Sales / Revenue Operations,11127.2,Sales overspent budget in Revenue Operations,11.0
+2025-09-01,Revenue Shortfall,APAC / Data & Insights,9844.43,Revenue came in below budget for APAC - Data & Insights,12.0
+2025-09-01,Revenue Shortfall,LATAM / Data & Insights,9432.22,Revenue came in below budget for LATAM - Data & Insights,13.0
+2025-09-01,Revenue Shortfall,APAC / SMB Subscription,5737.96,Revenue came in below budget for APAC - SMB Subscription,14.0
+2025-09-01,Revenue Shortfall,LATAM / Professional Services,5079.62,Revenue came in below budget for LATAM - Professional Services,15.0
+2025-09-01,Revenue Shortfall,Europe / Data & Insights,2493.64,Revenue came in below budget for Europe - Data & Insights,16.0
+2025-09-01,Revenue Shortfall,Europe / Professional Services,1034.01,Revenue came in below budget for Europe - Professional Services,17.0
+2025-10-01,Expense Overspend,Engineering / Product Engineering,72154.37,Engineering overspent budget in Product Engineering,1.0
+2025-10-01,Expense Overspend,G&A / Corporate Operations,49126.51,G&A overspent budget in Corporate Operations,2.0
+2025-10-01,Revenue Shortfall,Europe / SMB Subscription,28395.32,Revenue came in below budget for Europe - SMB Subscription,3.0
+2025-10-01,Revenue Shortfall,Europe / Enterprise Subscription,28200.47,Revenue came in below budget for Europe - Enterprise Subscription,4.0
+2025-10-01,Expense Overspend,Sales / Revenue Operations,24104.92,Sales overspent budget in Revenue Operations,5.0
+2025-10-01,Revenue Shortfall,APAC / SMB Subscription,15388.11,Revenue came in below budget for APAC - SMB Subscription,6.0
+2025-10-01,Revenue Shortfall,North America / Data & Insights,8602.66,Revenue came in below budget for North America - Data & Insights,7.0
+2025-10-01,Revenue Shortfall,APAC / Enterprise Subscription,6385.85,Revenue came in below budget for APAC - Enterprise Subscription,8.0
+2025-10-01,Revenue Shortfall,LATAM / Data & Insights,5796.73,Revenue came in below budget for LATAM - Data & Insights,9.0
+2025-10-01,Revenue Shortfall,North America / Professional Services,3990.53,Revenue came in below budget for North America - Professional Services,10.0
+2025-10-01,Revenue Shortfall,APAC / Data & Insights,3869.17,Revenue came in below budget for APAC - Data & Insights,11.0
+2025-10-01,Revenue Shortfall,Europe / Data & Insights,2040.78,Revenue came in below budget for Europe - Data & Insights,12.0
+2025-11-01,Expense Overspend,Engineering / Product Engineering,54175.13,Engineering overspent budget in Product Engineering,1.0
+2025-11-01,Revenue Shortfall,APAC / Enterprise Subscription,30823.78,Revenue came in below budget for APAC - Enterprise Subscription,2.0
+2025-11-01,Revenue Shortfall,North America / SMB Subscription,28955.61,Revenue came in below budget for North America - SMB Subscription,3.0
+2025-11-01,Revenue Shortfall,APAC / SMB Subscription,23051.01,Revenue came in below budget for APAC - SMB Subscription,4.0
+2025-11-01,Expense Overspend,Sales / Revenue Operations,21402.08,Sales overspent budget in Revenue Operations,5.0
+2025-11-01,Revenue Shortfall,LATAM / Enterprise Subscription,20344.47,Revenue came in below budget for LATAM - Enterprise Subscription,6.0
+2025-11-01,Revenue Shortfall,North America / Data & Insights,12470.29,Revenue came in below budget for North America - Data & Insights,7.0
+2025-11-01,Expense Overspend,Customer Success / Client Operations,10231.54,Customer Success overspent budget in Client Operations,8.0
+2025-11-01,Expense Overspend,Marketing / Growth Marketing,901.2,Marketing overspent budget in Growth Marketing,9.0
+2025-12-01,Expense Overspend,Engineering / Product Engineering,69091.09,Engineering overspent budget in Product Engineering,1.0
+2025-12-01,Revenue Shortfall,North America / SMB Subscription,36733.36,Revenue came in below budget for North America - SMB Subscription,2.0
+2025-12-01,Revenue Shortfall,Europe / SMB Subscription,24093.97,Revenue came in below budget for Europe - SMB Subscription,3.0
+2025-12-01,Expense Overspend,G&A / Corporate Operations,18007.15,G&A overspent budget in Corporate Operations,4.0
+2025-12-01,Expense Overspend,Customer Success / Client Operations,17900.56,Customer Success overspent budget in Client Operations,5.0
+2025-12-01,Revenue Shortfall,APAC / Data & Insights,13429.37,Revenue came in below budget for APAC - Data & Insights,6.0
+2025-12-01,Revenue Shortfall,Europe / Enterprise Subscription,10857.52,Revenue came in below budget for Europe - Enterprise Subscription,7.0
+2025-12-01,Revenue Shortfall,Europe / Professional Services,9963.11,Revenue came in below budget for Europe - Professional Services,8.0
+2025-12-01,Revenue Shortfall,North America / Professional Services,4864.45,Revenue came in below budget for North America - Professional Services,9.0
+2025-12-01,Expense Overspend,Product / Product Management,3843.19,Product overspent budget in Product Management,10.0
+2025-12-01,Revenue Shortfall,Europe / Data & Insights,1739.02,Revenue came in below budget for Europe - Data & Insights,11.0
+2025-12-01,Revenue Shortfall,APAC / SMB Subscription,1522.55,Revenue came in below budget for APAC - SMB Subscription,12.0

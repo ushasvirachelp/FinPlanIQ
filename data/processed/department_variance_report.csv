@@ -1,0 +1,217 @@
+month,department,cost_center,budget_headcount,actual_headcount,headcount_variance,budget_opex,actual_opex,opex_variance,opex_variance_pct,overspend_flag
+2023-01-01,Sales,Revenue Operations,40,41,1,515000.0,531498.93,16498.93,0.032,True
+2023-01-01,Marketing,Growth Marketing,24,23,-1,495200.0,490680.36,-4519.64,-0.0091,False
+2023-01-01,Engineering,Product Engineering,65,66,1,1087000.0,1033193.17,-53806.83,-0.0495,False
+2023-01-01,Product,Product Management,22,23,1,347200.0,353495.63,6295.63,0.0181,True
+2023-01-01,Customer Success,Client Operations,36,37,1,365200.0,362195.78,-3004.22,-0.0082,False
+2023-01-01,G&A,Corporate Operations,26,26,0,432800.0,459623.25,26823.25,0.062,True
+2023-02-01,Sales,Revenue Operations,40,40,0,515380.0,516164.46,784.46,0.0015,True
+2023-02-01,Marketing,Growth Marketing,24,24,0,496240.0,457968.33,-38271.67,-0.0771,False
+2023-02-01,Engineering,Product Engineering,65,65,0,1087760.0,1077714.77,-10045.23,-0.0092,False
+2023-02-01,Product,Product Management,22,22,0,347480.0,335968.08,-11511.92,-0.0331,False
+2023-02-01,Customer Success,Client Operations,36,35,-1,365408.0,367669.0,2261.0,0.0062,True
+2023-02-01,G&A,Corporate Operations,26,26,0,433460.0,438118.3,4658.3,0.0107,True
+2023-03-01,Sales,Revenue Operations,40,40,0,515760.0,532062.7,16302.7,0.0316,True
+2023-03-01,Marketing,Growth Marketing,24,24,0,497280.0,486471.37,-10808.63,-0.0217,False
+2023-03-01,Engineering,Product Engineering,65,66,1,1088520.0,1135394.53,46874.53,0.0431,True
+2023-03-01,Product,Product Management,22,22,0,347760.0,371018.57,23258.57,0.0669,True
+2023-03-01,Customer Success,Client Operations,36,37,1,365616.0,395093.25,29477.25,0.0806,True
+2023-03-01,G&A,Corporate Operations,26,27,1,434120.0,452041.45,17921.45,0.0413,True
+2023-04-01,Sales,Revenue Operations,40,40,0,516140.0,536127.96,19987.96,0.0387,True
+2023-04-01,Marketing,Growth Marketing,24,24,0,498320.0,484737.23,-13582.77,-0.0273,False
+2023-04-01,Engineering,Product Engineering,65,65,0,1089280.0,1095708.17,6428.17,0.0059,True
+2023-04-01,Product,Product Management,22,21,-1,348040.0,331847.76,-16192.24,-0.0465,False
+2023-04-01,Customer Success,Client Operations,36,35,-1,365824.0,385152.66,19328.66,0.0528,True
+2023-04-01,G&A,Corporate Operations,26,25,-1,434780.0,430763.58,-4016.42,-0.0092,False
+2023-05-01,Sales,Revenue Operations,40,41,1,516520.0,508498.45,-8021.55,-0.0155,False
+2023-05-01,Marketing,Growth Marketing,24,25,1,499360.0,470451.12,-28908.88,-0.0579,False
+2023-05-01,Engineering,Product Engineering,65,65,0,1090040.0,1093716.75,3676.75,0.0034,True
+2023-05-01,Product,Product Management,22,22,0,348320.0,359919.41,11599.41,0.0333,True
+2023-05-01,Customer Success,Client Operations,36,36,0,366032.0,376317.19,10285.19,0.0281,True
+2023-05-01,G&A,Corporate Operations,26,26,0,435440.0,453556.74,18116.74,0.0416,True
+2023-06-01,Sales,Revenue Operations,40,40,0,516900.0,536190.66,19290.66,0.0373,True
+2023-06-01,Marketing,Growth Marketing,24,25,1,500400.0,490217.72,-10182.28,-0.0203,False
+2023-06-01,Engineering,Product Engineering,65,65,0,1090800.0,1115504.08,24704.08,0.0226,True
+2023-06-01,Product,Product Management,22,22,0,348600.0,347686.23,-913.77,-0.0026,False
+2023-06-01,Customer Success,Client Operations,36,36,0,366240.0,384074.34,17834.34,0.0487,True
+2023-06-01,G&A,Corporate Operations,26,26,0,436100.0,439919.05,3819.05,0.0088,True
+2023-07-01,Sales,Revenue Operations,40,40,0,517280.0,526104.87,8824.87,0.0171,True
+2023-07-01,Marketing,Growth Marketing,24,24,0,501440.0,498942.56,-2497.44,-0.005,False
+2023-07-01,Engineering,Product Engineering,65,66,1,1091560.0,1097650.62,6090.62,0.0056,True
+2023-07-01,Product,Product Management,22,23,1,348880.0,383296.36,34416.36,0.0986,True
+2023-07-01,Customer Success,Client Operations,36,36,0,366448.0,372845.52,6397.52,0.0175,True
+2023-07-01,G&A,Corporate Operations,26,26,0,436760.0,446226.85,9466.85,0.0217,True
+2023-08-01,Sales,Revenue Operations,40,39,-1,517660.0,533424.94,15764.94,0.0305,True
+2023-08-01,Marketing,Growth Marketing,24,24,0,502480.0,516057.89,13577.89,0.027,True
+2023-08-01,Engineering,Product Engineering,65,66,1,1092320.0,1111440.27,19120.27,0.0175,True
+2023-08-01,Product,Product Management,22,21,-1,349160.0,336723.78,-12436.22,-0.0356,False
+2023-08-01,Customer Success,Client Operations,36,37,1,366656.0,390294.48,23638.48,0.0645,True
+2023-08-01,G&A,Corporate Operations,26,27,1,437420.0,483313.55,45893.55,0.1049,True
+2023-09-01,Sales,Revenue Operations,41,42,1,528540.0,548515.83,19975.83,0.0378,True
+2023-09-01,Marketing,Growth Marketing,25,25,0,513320.0,507126.93,-6193.07,-0.0121,False
+2023-09-01,Engineering,Product Engineering,66,67,1,1106880.0,1146267.68,39387.68,0.0356,True
+2023-09-01,Product,Product Management,23,23,0,362040.0,367236.95,5196.95,0.0144,True
+2023-09-01,Customer Success,Client Operations,37,36,-1,375564.0,380832.85,5268.85,0.014,True
+2023-09-01,G&A,Corporate Operations,27,27,0,448380.0,440221.36,-8158.64,-0.0182,False
+2023-10-01,Sales,Revenue Operations,41,42,1,528920.0,580424.67,51504.67,0.0974,True
+2023-10-01,Marketing,Growth Marketing,25,26,1,514360.0,522274.79,7914.79,0.0154,True
+2023-10-01,Engineering,Product Engineering,66,66,0,1107640.0,1071227.78,-36412.22,-0.0329,False
+2023-10-01,Product,Product Management,23,24,1,362320.0,380639.75,18319.75,0.0506,True
+2023-10-01,Customer Success,Client Operations,37,38,1,375772.0,375963.89,191.89,0.0005,True
+2023-10-01,G&A,Corporate Operations,27,28,1,449040.0,440629.18,-8410.82,-0.0187,False
+2023-11-01,Sales,Revenue Operations,41,41,0,529300.0,545909.41,16609.41,0.0314,True
+2023-11-01,Marketing,Growth Marketing,25,26,1,515400.0,492473.25,-22926.75,-0.0445,False
+2023-11-01,Engineering,Product Engineering,66,67,1,1108400.0,1058829.05,-49570.95,-0.0447,False
+2023-11-01,Product,Product Management,23,23,0,362600.0,362237.16,-362.84,-0.001,False
+2023-11-01,Customer Success,Client Operations,37,36,-1,375980.0,379480.16,3500.16,0.0093,True
+2023-11-01,G&A,Corporate Operations,27,28,1,449700.0,479217.29,29517.29,0.0656,True
+2023-12-01,Sales,Revenue Operations,41,42,1,529680.0,537617.29,7937.29,0.015,True
+2023-12-01,Marketing,Growth Marketing,25,25,0,516440.0,505095.48,-11344.52,-0.022,False
+2023-12-01,Engineering,Product Engineering,66,65,-1,1109160.0,1074419.3,-34740.7,-0.0313,False
+2023-12-01,Product,Product Management,23,23,0,362880.0,378585.68,15705.68,0.0433,True
+2023-12-01,Customer Success,Client Operations,37,38,1,376188.0,393091.89,16903.89,0.0449,True
+2023-12-01,G&A,Corporate Operations,27,26,-1,450360.0,417368.5,-32991.5,-0.0733,False
+2024-01-01,Sales,Revenue Operations,41,41,0,530060.0,545029.39,14969.39,0.0282,True
+2024-01-01,Marketing,Growth Marketing,25,26,1,517480.0,555526.97,38046.97,0.0735,True
+2024-01-01,Engineering,Product Engineering,66,66,0,1109920.0,1199224.32,89304.32,0.0805,True
+2024-01-01,Product,Product Management,23,23,0,363160.0,364216.03,1056.03,0.0029,True
+2024-01-01,Customer Success,Client Operations,37,37,0,376396.0,373809.2,-2586.8,-0.0069,False
+2024-01-01,G&A,Corporate Operations,27,26,-1,451020.0,468589.53,17569.53,0.039,True
+2024-02-01,Sales,Revenue Operations,41,40,-1,530440.0,539117.16,8677.16,0.0164,True
+2024-02-01,Marketing,Growth Marketing,25,25,0,518520.0,532326.82,13806.82,0.0266,True
+2024-02-01,Engineering,Product Engineering,66,67,1,1110680.0,1179518.47,68838.47,0.062,True
+2024-02-01,Product,Product Management,23,24,1,363440.0,384377.86,20937.86,0.0576,True
+2024-02-01,Customer Success,Client Operations,37,36,-1,376604.0,369339.96,-7264.04,-0.0193,False
+2024-02-01,G&A,Corporate Operations,27,28,1,451680.0,475612.95,23932.95,0.053,True
+2024-03-01,Sales,Revenue Operations,41,40,-1,530820.0,536914.89,6094.89,0.0115,True
+2024-03-01,Marketing,Growth Marketing,25,26,1,519560.0,515677.58,-3882.42,-0.0075,False
+2024-03-01,Engineering,Product Engineering,66,65,-1,1111440.0,1162577.3,51137.3,0.046,True
+2024-03-01,Product,Product Management,23,22,-1,363720.0,348357.5,-15362.5,-0.0422,False
+2024-03-01,Customer Success,Client Operations,37,37,0,376812.0,367654.5,-9157.5,-0.0243,False
+2024-03-01,G&A,Corporate Operations,27,28,1,452340.0,478344.29,26004.29,0.0575,True
+2024-04-01,Sales,Revenue Operations,41,41,0,531200.0,553958.74,22758.74,0.0428,True
+2024-04-01,Marketing,Growth Marketing,25,25,0,520600.0,479200.13,-41399.87,-0.0795,False
+2024-04-01,Engineering,Product Engineering,66,66,0,1112200.0,1101215.99,-10984.01,-0.0099,False
+2024-04-01,Product,Product Management,23,23,0,364000.0,377100.88,13100.88,0.036,True
+2024-04-01,Customer Success,Client Operations,37,37,0,377020.0,383173.01,6153.01,0.0163,True
+2024-04-01,G&A,Corporate Operations,27,26,-1,453000.0,460745.59,7745.59,0.0171,True
+2024-05-01,Sales,Revenue Operations,42,41,-1,542080.0,532919.48,-9160.52,-0.0169,False
+2024-05-01,Marketing,Growth Marketing,26,25,-1,531440.0,551898.27,20458.27,0.0385,True
+2024-05-01,Engineering,Product Engineering,67,67,0,1126760.0,1141265.87,14505.87,0.0129,True
+2024-05-01,Product,Product Management,24,24,0,376880.0,391966.79,15086.79,0.04,True
+2024-05-01,Customer Success,Client Operations,38,38,0,385928.0,385414.92,-513.08,-0.0013,False
+2024-05-01,G&A,Corporate Operations,28,27,-1,463960.0,468162.53,4202.53,0.0091,True
+2024-06-01,Sales,Revenue Operations,42,42,0,542460.0,554808.5,12348.5,0.0228,True
+2024-06-01,Marketing,Growth Marketing,26,26,0,532480.0,577714.96,45234.96,0.085,True
+2024-06-01,Engineering,Product Engineering,67,67,0,1127520.0,1200418.18,72898.18,0.0647,True
+2024-06-01,Product,Product Management,24,25,1,377160.0,399673.33,22513.33,0.0597,True
+2024-06-01,Customer Success,Client Operations,38,38,0,386136.0,402488.7,16352.7,0.0423,True
+2024-06-01,G&A,Corporate Operations,28,28,0,464620.0,465925.42,1305.42,0.0028,True
+2024-07-01,Sales,Revenue Operations,42,42,0,542840.0,571490.24,28650.24,0.0528,True
+2024-07-01,Marketing,Growth Marketing,26,25,-1,533520.0,538005.79,4485.79,0.0084,True
+2024-07-01,Engineering,Product Engineering,67,68,1,1128280.0,1189907.01,61627.01,0.0546,True
+2024-07-01,Product,Product Management,24,23,-1,377440.0,363400.76,-14039.24,-0.0372,False
+2024-07-01,Customer Success,Client Operations,38,39,1,386344.0,386107.21,-236.79,-0.0006,False
+2024-07-01,G&A,Corporate Operations,28,27,-1,465280.0,454398.04,-10881.96,-0.0234,False
+2024-08-01,Sales,Revenue Operations,42,42,0,543220.0,543558.05,338.05,0.0006,True
+2024-08-01,Marketing,Growth Marketing,26,27,1,534560.0,551437.74,16877.74,0.0316,True
+2024-08-01,Engineering,Product Engineering,67,67,0,1129040.0,1185377.66,56337.66,0.0499,True
+2024-08-01,Product,Product Management,24,24,0,377720.0,398661.69,20941.69,0.0554,True
+2024-08-01,Customer Success,Client Operations,38,37,-1,386552.0,379006.07,-7545.93,-0.0195,False
+2024-08-01,G&A,Corporate Operations,28,28,0,465940.0,475228.29,9288.29,0.0199,True
+2024-09-01,Sales,Revenue Operations,42,42,0,543600.0,557728.22,14128.22,0.026,True
+2024-09-01,Marketing,Growth Marketing,26,26,0,535600.0,585023.7,49423.7,0.0923,True
+2024-09-01,Engineering,Product Engineering,67,68,1,1129800.0,1217760.82,87960.82,0.0779,True
+2024-09-01,Product,Product Management,24,24,0,378000.0,388949.34,10949.34,0.029,True
+2024-09-01,Customer Success,Client Operations,38,38,0,386760.0,401817.56,15057.56,0.0389,True
+2024-09-01,G&A,Corporate Operations,28,28,0,466600.0,456669.83,-9930.17,-0.0213,False
+2024-10-01,Sales,Revenue Operations,42,42,0,543980.0,521176.91,-22803.09,-0.0419,False
+2024-10-01,Marketing,Growth Marketing,26,26,0,536640.0,564768.68,28128.68,0.0524,True
+2024-10-01,Engineering,Product Engineering,67,67,0,1130560.0,1083602.39,-46957.61,-0.0415,False
+2024-10-01,Product,Product Management,24,24,0,378280.0,393984.2,15704.2,0.0415,True
+2024-10-01,Customer Success,Client Operations,38,37,-1,386968.0,387664.12,696.12,0.0018,True
+2024-10-01,G&A,Corporate Operations,28,29,1,467260.0,494619.05,27359.05,0.0586,True
+2024-11-01,Sales,Revenue Operations,42,41,-1,544360.0,552357.38,7997.38,0.0147,True
+2024-11-01,Marketing,Growth Marketing,26,27,1,537680.0,563733.26,26053.26,0.0485,True
+2024-11-01,Engineering,Product Engineering,67,68,1,1131320.0,1175718.67,44398.67,0.0392,True
+2024-11-01,Product,Product Management,24,24,0,378560.0,378896.05,336.05,0.0009,True
+2024-11-01,Customer Success,Client Operations,38,38,0,387176.0,381758.44,-5417.56,-0.014,False
+2024-11-01,G&A,Corporate Operations,28,28,0,467920.0,468192.69,272.69,0.0006,True
+2024-12-01,Sales,Revenue Operations,42,42,0,544740.0,554399.8,9659.8,0.0177,True
+2024-12-01,Marketing,Growth Marketing,26,26,0,538720.0,527073.62,-11646.38,-0.0216,False
+2024-12-01,Engineering,Product Engineering,67,67,0,1132080.0,1156658.44,24578.44,0.0217,True
+2024-12-01,Product,Product Management,24,24,0,378840.0,378137.22,-702.78,-0.0019,False
+2024-12-01,Customer Success,Client Operations,38,39,1,387384.0,423728.76,36344.76,0.0938,True
+2024-12-01,G&A,Corporate Operations,28,29,1,468580.0,492375.89,23795.89,0.0508,True
+2025-01-01,Sales,Revenue Operations,43,43,0,555620.0,525332.84,-30287.16,-0.0545,False
+2025-01-01,Marketing,Growth Marketing,27,27,0,549560.0,542261.5,-7298.5,-0.0133,False
+2025-01-01,Engineering,Product Engineering,68,68,0,1146640.0,1128335.94,-18304.06,-0.016,False
+2025-01-01,Product,Product Management,25,25,0,391720.0,371270.41,-20449.59,-0.0522,False
+2025-01-01,Customer Success,Client Operations,39,39,0,396292.0,399467.07,3175.07,0.008,True
+2025-01-01,G&A,Corporate Operations,29,30,1,479540.0,521193.03,41653.03,0.0869,True
+2025-02-01,Sales,Revenue Operations,43,43,0,556000.0,540630.98,-15369.02,-0.0276,False
+2025-02-01,Marketing,Growth Marketing,27,26,-1,550600.0,556335.19,5735.19,0.0104,True
+2025-02-01,Engineering,Product Engineering,68,69,1,1147400.0,1176357.61,28957.61,0.0252,True
+2025-02-01,Product,Product Management,25,25,0,392000.0,393271.72,1271.72,0.0032,True
+2025-02-01,Customer Success,Client Operations,39,38,-1,396500.0,391257.17,-5242.83,-0.0132,False
+2025-02-01,G&A,Corporate Operations,29,30,1,480200.0,504932.68,24732.68,0.0515,True
+2025-03-01,Sales,Revenue Operations,43,42,-1,556380.0,563324.24,6944.24,0.0125,True
+2025-03-01,Marketing,Growth Marketing,27,27,0,551640.0,564500.18,12860.18,0.0233,True
+2025-03-01,Engineering,Product Engineering,68,69,1,1148160.0,1202556.68,54396.68,0.0474,True
+2025-03-01,Product,Product Management,25,25,0,392280.0,379852.9,-12427.1,-0.0317,False
+2025-03-01,Customer Success,Client Operations,39,39,0,396708.0,394244.7,-2463.3,-0.0062,False
+2025-03-01,G&A,Corporate Operations,29,30,1,480860.0,482224.34,1364.34,0.0028,True
+2025-04-01,Sales,Revenue Operations,43,43,0,556760.0,575675.19,18915.19,0.034,True
+2025-04-01,Marketing,Growth Marketing,27,26,-1,552680.0,600163.21,47483.21,0.0859,True
+2025-04-01,Engineering,Product Engineering,68,68,0,1148920.0,1121546.9,-27373.1,-0.0238,False
+2025-04-01,Product,Product Management,25,25,0,392560.0,386544.29,-6015.71,-0.0153,False
+2025-04-01,Customer Success,Client Operations,39,39,0,396916.0,404728.82,7812.82,0.0197,True
+2025-04-01,G&A,Corporate Operations,29,29,0,481520.0,484904.57,3384.57,0.007,True
+2025-05-01,Sales,Revenue Operations,43,43,0,557140.0,555245.66,-1894.34,-0.0034,False
+2025-05-01,Marketing,Growth Marketing,27,28,1,553720.0,611360.28,57640.28,0.1041,True
+2025-05-01,Engineering,Product Engineering,68,68,0,1149680.0,1111227.36,-38452.64,-0.0334,False
+2025-05-01,Product,Product Management,25,25,0,392840.0,409548.12,16708.12,0.0425,True
+2025-05-01,Customer Success,Client Operations,39,39,0,397124.0,396270.3,-853.7,-0.0021,False
+2025-05-01,G&A,Corporate Operations,29,30,1,482180.0,453524.32,-28655.68,-0.0594,False
+2025-06-01,Sales,Revenue Operations,43,42,-1,557520.0,539427.87,-18092.13,-0.0325,False
+2025-06-01,Marketing,Growth Marketing,27,26,-1,554760.0,510819.86,-43940.14,-0.0792,False
+2025-06-01,Engineering,Product Engineering,68,68,0,1150440.0,1154279.09,3839.09,0.0033,True
+2025-06-01,Product,Product Management,25,25,0,393120.0,405451.02,12331.02,0.0314,True
+2025-06-01,Customer Success,Client Operations,39,38,-1,397332.0,406555.49,9223.49,0.0232,True
+2025-06-01,G&A,Corporate Operations,29,30,1,482840.0,513410.9,30570.9,0.0633,True
+2025-07-01,Sales,Revenue Operations,43,43,0,557900.0,545345.79,-12554.21,-0.0225,False
+2025-07-01,Marketing,Growth Marketing,27,27,0,555800.0,582229.45,26429.45,0.0476,True
+2025-07-01,Engineering,Product Engineering,68,67,-1,1151200.0,1144136.76,-7063.24,-0.0061,False
+2025-07-01,Product,Product Management,25,26,1,393400.0,413999.59,20599.59,0.0524,True
+2025-07-01,Customer Success,Client Operations,39,38,-1,397540.0,393467.18,-4072.82,-0.0102,False
+2025-07-01,G&A,Corporate Operations,29,29,0,483500.0,531941.08,48441.08,0.1002,True
+2025-08-01,Sales,Revenue Operations,43,43,0,558280.0,566016.63,7736.63,0.0139,True
+2025-08-01,Marketing,Growth Marketing,27,28,1,556840.0,577833.6,20993.6,0.0377,True
+2025-08-01,Engineering,Product Engineering,68,68,0,1151960.0,1236998.52,85038.52,0.0738,True
+2025-08-01,Product,Product Management,25,26,1,393680.0,411046.35,17366.35,0.0441,True
+2025-08-01,Customer Success,Client Operations,39,38,-1,397748.0,403789.72,6041.72,0.0152,True
+2025-08-01,G&A,Corporate Operations,29,28,-1,484160.0,458288.42,-25871.58,-0.0534,False
+2025-09-01,Sales,Revenue Operations,44,44,0,569160.0,580287.2,11127.2,0.0196,True
+2025-09-01,Marketing,Growth Marketing,28,29,1,567680.0,556171.31,-11508.69,-0.0203,False
+2025-09-01,Engineering,Product Engineering,69,70,1,1166520.0,1226399.58,59879.58,0.0513,True
+2025-09-01,Product,Product Management,26,26,0,406560.0,401434.33,-5125.67,-0.0126,False
+2025-09-01,Customer Success,Client Operations,40,39,-1,406656.0,402713.14,-3942.86,-0.0097,False
+2025-09-01,G&A,Corporate Operations,30,30,0,495120.0,488164.65,-6955.35,-0.014,False
+2025-10-01,Sales,Revenue Operations,44,44,0,569540.0,593644.92,24104.92,0.0423,True
+2025-10-01,Marketing,Growth Marketing,28,28,0,568720.0,558056.62,-10663.38,-0.0187,False
+2025-10-01,Engineering,Product Engineering,69,70,1,1167280.0,1239434.37,72154.37,0.0618,True
+2025-10-01,Product,Product Management,26,25,-1,406840.0,389612.76,-17227.24,-0.0423,False
+2025-10-01,Customer Success,Client Operations,40,40,0,406864.0,398549.28,-8314.72,-0.0204,False
+2025-10-01,G&A,Corporate Operations,30,31,1,495780.0,544906.51,49126.51,0.0991,True
+2025-11-01,Sales,Revenue Operations,44,44,0,569920.0,591322.08,21402.08,0.0376,True
+2025-11-01,Marketing,Growth Marketing,28,28,0,569760.0,570661.2,901.2,0.0016,True
+2025-11-01,Engineering,Product Engineering,69,69,0,1168040.0,1222215.13,54175.13,0.0464,True
+2025-11-01,Product,Product Management,26,26,0,407120.0,406308.18,-811.82,-0.002,False
+2025-11-01,Customer Success,Client Operations,40,40,0,407072.0,417303.54,10231.54,0.0251,True
+2025-11-01,G&A,Corporate Operations,30,31,1,496440.0,489756.79,-6683.21,-0.0135,False
+2025-12-01,Sales,Revenue Operations,44,43,-1,570300.0,568263.57,-2036.43,-0.0036,False
+2025-12-01,Marketing,Growth Marketing,28,28,0,570800.0,542842.21,-27957.79,-0.049,False
+2025-12-01,Engineering,Product Engineering,69,70,1,1168800.0,1237891.09,69091.09,0.0591,True
+2025-12-01,Product,Product Management,26,26,0,407400.0,411243.19,3843.19,0.0094,True
+2025-12-01,Customer Success,Client Operations,40,41,1,407280.0,425180.56,17900.56,0.044,True
+2025-12-01,G&A,Corporate Operations,30,31,1,497100.0,515107.15,18007.15,0.0362,True
