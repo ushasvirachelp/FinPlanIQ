@@ -1,10 +1,12 @@
 import sys
 from pathlib import Path
+import html
 
 import duckdb
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(PROJECT_ROOT))
@@ -81,6 +83,16 @@ st.markdown(
         font-size: 16px;
         margin-bottom: 0;
     }
+    .summary-box {
+    background-color: #ECFDF5;
+    border-left: 5px solid #1F7A4D;
+    padding: 18px 20px;
+    border-radius: 10px;
+    color: #111827;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -107,6 +119,16 @@ def format_money(value):
 def format_pct(value):
     return f"{float(value) * 100:.1f}%"
 
+def render_page_header(title, subtitle):
+    st.markdown(
+        f"""
+        <div class="dashboard-header">
+            <h1>{title}</h1>
+            <p>{subtitle}</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 def load_tables():
     monthly = query_df("SELECT * FROM monthly_financial_summary ORDER BY month")
@@ -115,6 +137,34 @@ def load_tables():
     drivers = query_df("SELECT * FROM variance_drivers ORDER BY month, rank_in_month")
 
     return monthly, departments, revenue, drivers
+
+def render_global_filters(monthly, departments, revenue):
+    st.sidebar.markdown("## Filters")
+
+    available_months = sorted(monthly["month"].unique(), reverse=True)
+
+    selected_month = st.sidebar.selectbox(
+        "Month",
+        available_months,
+        format_func=lambda value: pd.to_datetime(value).strftime("%b %Y")
+    )
+
+    selected_region = st.sidebar.selectbox(
+        "Region",
+        ["All"] + sorted(revenue["region"].unique().tolist())
+    )
+
+    selected_business_unit = st.sidebar.selectbox(
+        "Business Unit",
+        ["All"] + sorted(revenue["business_unit"].unique().tolist())
+    )
+
+    selected_department = st.sidebar.selectbox(
+        "Department",
+        ["All"] + sorted(departments["department"].unique().tolist())
+    )
+
+    return selected_month, selected_region, selected_business_unit, selected_department
 
 
 def render_kpi_cards(latest):
@@ -148,30 +198,41 @@ def render_kpi_cards(latest):
     )
 
 
-def executive_summary_page(monthly, drivers):
-    st.markdown(
-    """
-    <div class="dashboard-header">
-        <h1>FinPlanIQ</h1>
-        <p>Monthly FP&A performance review for budget vs actuals, variance analysis, forecasting, and scenario planning.</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-    latest = monthly.sort_values("month").iloc[-1]
+def executive_summary_page(monthly, drivers, selected_month):
+    render_page_header(
+        "FinPlanIQ",
+        "Monthly FP&A performance review for budget vs actuals, variance analysis, forecasting, and scenario planning."
+    )
+
+    selected_monthly = monthly[monthly["month"] == selected_month]
+
+    if selected_monthly.empty:
+        st.warning("No data available for the selected month.")
+        return
+
+    latest = selected_monthly.iloc[0]
     render_kpi_cards(latest)
 
-    latest_month = latest["month"]
-    latest_drivers = drivers[drivers["month"] == latest_month]
+    latest_drivers = drivers[drivers["month"] == selected_month]
+    summary_text = generate_executive_summary(selected_monthly, latest_drivers)
 
     st.subheader("Executive Summary")
-    st.info(generate_executive_summary(monthly, latest_drivers))
+    st.markdown(
+        f"""
+        <div class="summary-box">
+            {html.escape(summary_text)}
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    monthly_chart = monthly[monthly["month"] <= selected_month]
 
     col1, col2 = st.columns(2)
 
     with col1:
         fig = px.line(
-            monthly,
+            monthly_chart,
             x="month",
             y=["actual_revenue", "budget_revenue"],
             title="Revenue: Actual vs Budget"
@@ -180,7 +241,7 @@ def executive_summary_page(monthly, drivers):
 
     with col2:
         fig = px.line(
-            monthly,
+            monthly_chart,
             x="month",
             y=["actual_ebitda", "budget_ebitda"],
             title="EBITDA: Actual vs Budget"
@@ -193,9 +254,11 @@ def executive_summary_page(monthly, drivers):
         use_container_width=True
     )
 
-
 def budget_actuals_page(monthly):
-    st.title("Budget vs Actuals")
+    render_page_header(
+    "Budget vs Actuals",
+    "Compare actual financial performance against budget across revenue, COGS, operating expenses, and EBITDA."
+)
 
     metric = st.selectbox(
         "Select financial line item",
@@ -227,11 +290,15 @@ def budget_actuals_page(monthly):
     )
 
 
-def department_page(departments):
-    st.title("Department / Cost Center Analysis")
-
-    latest_month = departments["month"].max()
-    latest = departments[departments["month"] == latest_month]
+def department_page(departments, selected_month, selected_department):
+    render_page_header(
+    "Department / Cost Center Analysis",
+    "Identify department-level overspend, headcount variance, and cost center pressure."
+)
+    filtered = departments[departments["month"] == selected_month]
+    if selected_department != "All":
+        filtered = filtered[filtered["department"] == selected_department]
+    latest = filtered
 
     fig = px.bar(
         latest.sort_values("opex_variance", ascending=False),
@@ -249,8 +316,11 @@ def department_page(departments):
     )
 
 
-def trends_page(monthly, revenue):
-    st.title("Revenue & Expense Trends")
+def trends_page(monthly, revenue, selected_region, selected_business_unit):
+    render_page_header(
+    "Revenue & Expense Trends",
+    "Track financial performance trends across revenue, operating expenses, gross margin, and EBITDA margin."
+)
 
     col1, col2 = st.columns(2)
 
@@ -271,12 +341,18 @@ def trends_page(monthly, revenue):
             title="Gross Margin and EBITDA Margin Trend"
         )
         st.plotly_chart(fig, use_container_width=True)
+        filtered_revenue = revenue.copy()
 
+    if selected_region != "All":
+        filtered_revenue = filtered_revenue[filtered_revenue["region"] == selected_region]
+
+    if selected_business_unit != "All":
+        filtered_revenue = filtered_revenue[filtered_revenue["business_unit"] == selected_business_unit]
     revenue_by_region = (
-        revenue
-        .groupby(["month", "region"], as_index=False)["actual_revenue"]
-        .sum()
-    )
+    filtered_revenue
+    .groupby(["month", "region"], as_index=False)["actual_revenue"]
+    .sum()
+)
 
     fig = px.line(
         revenue_by_region,
@@ -290,7 +366,10 @@ def trends_page(monthly, revenue):
 
 
 def forecasting_page(monthly):
-    st.title("Forecasting")
+    render_page_header(
+    "Forecasting",
+    "Project revenue, operating expenses, EBITDA, and margin using recent business trends."
+)
 
     months_ahead = st.slider(
         "Forecast months",
@@ -314,7 +393,10 @@ def forecasting_page(monthly):
 
 
 def scenario_page(monthly):
-    st.title("Scenario Analysis")
+    render_page_header(
+    "Scenario Analysis",
+    "Model the impact of revenue declines, payroll inflation, and marketing spend changes on profitability."
+)
 
     latest = monthly.sort_values("month").iloc[-1]
 
@@ -361,13 +443,11 @@ def scenario_page(monthly):
     )
 
 
-def variance_driver_page(drivers):
-    st.title("Variance Driver Explanation")
-
-    selected_month = st.selectbox(
-        "Select month",
-        sorted(drivers["month"].unique(), reverse=True)
-    )
+def variance_driver_page(drivers, selected_month):
+    render_page_header(
+    "Variance Driver Explanation",
+    "Rank the largest unfavorable revenue and expense drivers impacting business performance."
+)
 
     filtered = (
         drivers[drivers["month"] == selected_month]
@@ -392,6 +472,11 @@ def variance_driver_page(drivers):
 def main():
     monthly, departments, revenue, drivers = load_tables()
 
+    selected_month, selected_region, selected_business_unit, selected_department = render_global_filters(
+        monthly,
+        departments,
+        revenue
+    )
     page = st.sidebar.radio(
         "Dashboard Page",
         [
@@ -406,19 +491,19 @@ def main():
     )
 
     if page == "Executive Summary":
-        executive_summary_page(monthly, drivers)
+        executive_summary_page(monthly, drivers, selected_month)
     elif page == "Budget vs Actuals":
         budget_actuals_page(monthly)
     elif page == "Department Analysis":
-        department_page(departments)
+        department_page(departments, selected_month, selected_department)
     elif page == "Revenue & Expense Trends":
-        trends_page(monthly, revenue)
+        trends_page(monthly, revenue, selected_region, selected_business_unit)
     elif page == "Forecasting":
         forecasting_page(monthly)
     elif page == "Scenario Analysis":
         scenario_page(monthly)
     elif page == "Variance Drivers":
-        variance_driver_page(drivers)
+        variance_driver_page(drivers, selected_month)
 
 
 if __name__ == "__main__":
