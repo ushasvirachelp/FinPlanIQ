@@ -12,30 +12,42 @@ FinPlanIQ solves this by creating a realistic finance reporting workflow using P
 
 ## Key Features
 
-- Monthly budget vs actual analysis
-- Revenue, COGS, operating expense, gross margin, and EBITDA tracking
-- Department and cost center variance analysis
-- Region and business unit revenue reporting
-- Rolling revenue and EBITDA forecast
-- Scenario analysis for revenue drops, payroll increases, and marketing spend changes
-- Automated executive summary written in FP&A business language
-- SQL reporting queries for finance analytics
+* Monthly budget vs actual analysis
+* Revenue, COGS, operating expense, gross margin, and EBITDA tracking
+* Department and cost center variance analysis
+* Region and business unit revenue reporting
+* Rolling revenue and EBITDA forecast
+* Scenario analysis for revenue drops, payroll increases, and marketing spend changes
+* Automated executive summary written in FP&A business language
+* SQL reporting queries for finance analytics
+
+## Security Features
+
+* Secure upload validation for user-provided FP&A workbooks
+* `.xlsx` file allowlisting
+* Rejection of unsupported or macro-enabled file formats
+* Upload size limit of 10 MB
+* In-memory file processing for uploaded financial data
+* Privacy notice for user-uploaded datasets
+* Safe error handling for invalid uploads
+* Security documentation available in `SECURITY.md`
 
 ## Tech Stack
 
-- Python
-- Pandas
-- NumPy
-- DuckDB
-- SQL
-- Streamlit
-- Plotly
+* Python
+* Pandas
+* NumPy
+* DuckDB
+* SQL
+* Streamlit
+* Plotly
 
 ## Project Structure
 
 ```text
 FinPlanIQ/
 ├── README.md
+├── SECURITY.md
 ├── requirements.txt
 ├── data/
 │   ├── raw/
@@ -49,6 +61,8 @@ FinPlanIQ/
 │   ├── kpi_calculations.py
 │   ├── forecasting.py
 │   ├── scenario_analysis.py
+│   ├── upload_processor.py
+│   ├── security_utils.py
 │   └── executive_summary.py
 ├── app/
 │   └── streamlit_app.py
@@ -65,47 +79,53 @@ The project simulates 36 months of financial data from January 2023 to December 
 
 The dataset includes:
 
-- Monthly revenue
-- Budget revenue
-- Actual revenue
-- COGS
-- Operating expenses
-- Payroll expense
-- Department headcount
-- Cost centers
-- Regions
-- Business units
-- Variance drivers
+* Monthly revenue
+* Budget revenue
+* Actual revenue
+* COGS
+* Operating expenses
+* Payroll expense
+* Department headcount
+* Cost centers
+* Regions
+* Business units
+* Variance drivers
 
 ## Core KPIs
 
-| KPI | Definition |
-|---|---|
-| Total Revenue | Actual revenue for the selected period |
-| Revenue Variance | Actual revenue minus budget revenue |
-| Revenue Variance % | Revenue variance divided by budget revenue |
-| Gross Profit | Revenue minus COGS |
-| Gross Margin % | Gross profit divided by revenue |
-| Operating Expenses | Payroll plus other operating expenses |
-| Expense Variance | Actual opex minus budget opex |
-| EBITDA | Gross profit minus operating expenses |
-| EBITDA Margin % | EBITDA divided by revenue |
-| Department Overspend | Department where actual spend exceeds budget |
+| KPI                         | Definition                                              |
+| --------------------------- | ------------------------------------------------------- |
+| Total Revenue               | Actual revenue for the selected period                  |
+| Revenue Variance            | Actual revenue minus budget revenue                     |
+| Revenue Variance %          | Revenue variance divided by budget revenue              |
+| Gross Profit                | Revenue minus COGS                                      |
+| Gross Margin %              | Gross profit divided by revenue                         |
+| Operating Expenses          | Payroll plus other operating expenses                   |
+| Expense Variance            | Actual opex minus budget opex                           |
+| EBITDA                      | Gross profit minus operating expenses                   |
+| EBITDA Margin %             | EBITDA divided by revenue                               |
+| Department Overspend        | Department where actual spend exceeds budget            |
 | Unfavorable Variance Driver | Revenue shortfall or expense overspend impacting profit |
 
 ## Dashboard Pages
 
 1. Executive Summary
-<img width="1470" height="747" alt="Screenshot 2026-06-24 at 1 40 20 PM" src="https://github.com/user-attachments/assets/9e030b96-ef5e-425c-bb9f-9b1616fb79d1" />
-2. Budget vs Actuals\
-<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 27 04 PM" src="https://github.com/user-attachments/assets/dbf53e02-ca02-4b4d-8ba1-c7c25d1a245a" />
+   ![alt text](<Screenshot 2026-06-24 at 1.40.20 PM.png>)
+
+2. Budget vs Actuals
+   ![alt text](<Screenshot 2026-06-24 at 3.27.04 PM.png>)
+
 3. Department Analysis
-<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 27 53 PM" src="https://github.com/user-attachments/assets/ceba44fb-4b25-48aa-a0d7-7df5d6006f37" />
+   ![alt text](<Screenshot 2026-06-24 at 3.27.53 PM.png>)
+
 4. Revenue & Expense Trends
-<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 28 25 PM" src="https://github.com/user-attachments/assets/d2d0b75c-7751-498e-85a3-67ecc6bda207" />
+   ![alt text](<Screenshot 2026-06-24 at 3.28.25 PM.png>)
+
 5. Forecasting
-<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 29 53 PM" src="https://github.com/user-attachments/assets/3d721f2c-dfc2-4d62-a5f0-aad52777bafd" />
+   ![alt text](<Screenshot 2026-06-24 at 3.29.53 PM.png>)
+
 6. Scenario Analysis
-<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 30 17 PM" src="https://github.com/user-attachments/assets/6e89bb28-03a2-41d5-a1c6-88b99f230367" />
+   ![alt text](<Screenshot 2026-06-24 at 3.30.17 PM.png>)
+
 7. Variance Drivers
-<img width="1470" height="747" alt="Screenshot 2026-06-24 at 3 31 03 PM" src="https://github.com/user-attachments/assets/e0761bf0-8d92-4e15-98f7-7d4c52d6d112" />
+   ![alt text](<Screenshot 2026-06-24 at 3.31.03 PM.png>)
