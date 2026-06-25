@@ -1,3 +1,7 @@
+## Live Demo
+
+[Launch FinPlanIQ](YOUR_STREAMLIT_APP_LINK_HERE)
+
 # FinPlanIQ
 
 FinPlanIQ is an FP&A and finance analytics portfolio project that simulates a company's monthly financial performance and analyzes budget vs actuals, revenue variance, expense variance, department performance, rolling forecasts, and scenario analysis.
