@@ -123,25 +123,12 @@ FinPlanIQ also supports optional template-based user uploads for demonstration p
 ## Dashboard Pages
 
 1. Executive Summary
-   ![alt text](<Screenshot 2026-06-24 at 1.40.20 PM.png>)
-
 2. Budget vs Actuals
-   ![alt text](<Screenshot 2026-06-24 at 3.27.04 PM.png>)
-
 3. Department Analysis
-   ![alt text](<Screenshot 2026-06-24 at 3.27.53 PM.png>)
-
 4. Revenue & Expense Trends
-   ![alt text](<Screenshot 2026-06-24 at 3.28.25 PM.png>)
-
 5. Forecasting
-   ![alt text](<Screenshot 2026-06-24 at 3.29.53 PM.png>)
-
 6. Scenario Analysis
-   ![alt text](<Screenshot 2026-06-24 at 3.30.17 PM.png>)
-
 7. Variance Drivers
-   ![alt text](<Screenshot 2026-06-24 at 3.31.03 PM.png>)
 
 ## Project Note
 
