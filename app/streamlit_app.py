@@ -5,6 +5,7 @@ from pathlib import Path
 import duckdb
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -12,59 +13,68 @@ sys.path.append(str(PROJECT_ROOT))
 
 from src.config import DUCKDB_PATH
 from src.executive_summary import generate_executive_summary
+from src.export_pack import build_management_pack
 from src.forecasting import build_simple_forecast
 from src.scenario_analysis import apply_scenario, build_revenue_downside_table
+from src.upload_processor import build_upload_template, process_uploaded_workbook
 
 
-CHART_TEMPLATE = "plotly_white"
+CHART_TEMPLATE = "plotly_dark"
 
 FINANCE_COLORS = {
-    "actual": "#1F7A4D",
-    "budget": "#64748B",
-    "unfavorable": "#DC2626",
-    "favorable": "#16A34A",
-    "neutral": "#2563EB",
+    "actual": "#22C55E",
+    "budget": "#94A3B8",
+    "unfavorable": "#EF4444",
+    "favorable": "#22C55E",
+    "neutral": "#38BDF8",
 }
 
 
 st.set_page_config(
     page_title="FinPlanIQ",
-    page_icon=":bar_chart:",
+    page_icon="📊",
     layout="wide",
 )
+
 
 st.markdown(
     """
     <style>
-    .main {
-        background-color: #F7F9FB;
+    .stApp {
+        background-color: #0B1120;
+        color: #E5E7EB;
     }
 
     .block-container {
         padding-top: 2rem;
         padding-bottom: 2rem;
+        max-width: 1500px;
     }
 
-    h1, h2, h3 {
-        color: #111827;
+    h1, h2, h3, h4 {
+        color: #F9FAFB !important;
         font-weight: 700;
     }
 
+    p, label, span {
+        color: inherit;
+    }
+
     [data-testid="stMetric"] {
-        background-color: #FFFFFF;
-        border: 1px solid #E5E7EB;
+        background-color: #111827;
+        border: 1px solid #1F2937;
         padding: 18px;
         border-radius: 12px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        box-shadow: 0 10px 28px rgba(0,0,0,0.18);
     }
 
     [data-testid="stMetricLabel"] {
-        color: #6B7280;
+        color: #9CA3AF;
         font-size: 14px;
     }
 
     [data-testid="stMetricValue"] {
-        color: #111827;
+        color: #F9FAFB;
         font-size: 26px;
         font-weight: 700;
     }
@@ -74,28 +84,37 @@ st.markdown(
     }
 
     section[data-testid="stSidebar"] {
-        background-color: #0F172A;
+        background-color: #020617;
+        border-right: 1px solid #1E293B;
     }
 
     section[data-testid="stSidebar"] * {
-        color: #FFFFFF;
+        color: #F9FAFB;
+    }
+
+    div[data-baseweb="select"] > div {
+        background-color: #111827;
+        border-color: #1F2937;
+        color: #F9FAFB;
     }
 
     div[data-testid="stDataFrame"] {
-        border: 1px solid #E5E7EB;
+        border: 1px solid #1F2937;
         border-radius: 10px;
     }
 
     .dashboard-header {
-        background: linear-gradient(135deg, #0F172A 0%, #1F7A4D 100%);
-        padding: 28px;
-        border-radius: 14px;
+        background: linear-gradient(135deg, #020617 0%, #064E3B 50%, #15803D 100%);
+        padding: 30px;
+        border-radius: 16px;
         margin-bottom: 24px;
+        border: 1px solid #1F2937;
+        box-shadow: 0 16px 40px rgba(0,0,0,0.25);
     }
 
     .dashboard-header h1 {
-        color: #FFFFFF;
-        margin-bottom: 4px;
+        color: #FFFFFF !important;
+        margin-bottom: 6px;
     }
 
     .dashboard-header p {
@@ -105,16 +124,50 @@ st.markdown(
     }
 
     .summary-box {
-        background-color: #FFFFFF;
-        border: 1px solid #D1FAE5;
-        border-left: 6px solid #1F7A4D;
-        padding: 18px 22px;
-        border-radius: 10px;
-        color: #111827;
+        background-color: #111827;
+        border: 1px solid #1F2937;
+        border-left: 6px solid #22C55E;
+        padding: 20px 24px;
+        border-radius: 12px;
+        color: #E5E7EB;
         font-size: 16px;
         line-height: 1.7;
         margin-bottom: 24px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    }
+
+    .filter-note {
+        background-color: #111827;
+        border: 1px solid #1F2937;
+        padding: 12px 16px;
+        border-radius: 10px;
+        color: #CBD5E1;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .upload-box {
+        background-color: #111827;
+        border: 1px solid #1F2937;
+        padding: 16px 18px;
+        border-radius: 12px;
+        color: #CBD5E1;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .stDownloadButton button {
+        background-color: #16A34A;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+        padding: 0.6rem 1rem;
+        font-weight: 700;
+    }
+
+    .stDownloadButton button:hover {
+        background-color: #15803D;
+        color: #FFFFFF;
     }
     </style>
     """,
@@ -126,6 +179,26 @@ st.markdown(
 def query_df(sql):
     with duckdb.connect(str(DUCKDB_PATH), read_only=True) as connection:
         return connection.execute(sql).fetchdf()
+
+
+@st.cache_data
+def load_demo_tables():
+    monthly = query_df("SELECT * FROM monthly_financial_summary ORDER BY month")
+    departments = query_df("SELECT * FROM department_variance_report ORDER BY month, department")
+    revenue = query_df("SELECT * FROM revenue_variance_report ORDER BY month, region, business_unit")
+    drivers = query_df("SELECT * FROM variance_drivers ORDER BY month, rank_in_month")
+    return monthly, departments, revenue, drivers
+
+
+@st.cache_data
+def load_uploaded_tables(uploaded_file):
+    processed = process_uploaded_workbook(uploaded_file)
+    return (
+        processed["monthly"],
+        processed["departments"],
+        processed["revenue"],
+        processed["drivers"],
+    )
 
 
 def format_money(value):
@@ -156,13 +229,80 @@ def render_page_header(title, subtitle):
     )
 
 
-def load_tables():
-    monthly = query_df("SELECT * FROM monthly_financial_summary ORDER BY month")
-    departments = query_df("SELECT * FROM department_variance_report ORDER BY month, department")
-    revenue = query_df("SELECT * FROM revenue_variance_report ORDER BY month, region, business_unit")
-    drivers = query_df("SELECT * FROM variance_drivers ORDER BY month, rank_in_month")
+def render_data_source_selector():
+    st.sidebar.markdown("## Data Source")
 
-    return monthly, departments, revenue, drivers
+    data_source = st.sidebar.radio(
+        "Choose dataset",
+        ["Demo Dataset", "Upload My Own Dataset"],
+    )
+
+    uploaded_file = None
+
+    if data_source == "Upload My Own Dataset":
+        template_file = build_upload_template()
+
+        st.sidebar.download_button(
+            label="Download Upload Template",
+            data=template_file,
+            file_name="finplaniq_upload_template.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        )
+
+        uploaded_file = st.sidebar.file_uploader(
+            "Upload completed Excel workbook",
+            type=["xlsx"],
+        )
+
+    return data_source, uploaded_file
+
+
+def get_active_tables(data_source, uploaded_file):
+    if data_source == "Demo Dataset":
+        return load_demo_tables(), "Demo Dataset"
+
+    if uploaded_file is None:
+        render_page_header(
+            "Upload Your FP&A Dataset",
+            "Download the template, fill in your revenue and opex data, then upload the workbook to generate the dashboard.",
+        )
+
+        st.markdown(
+            """
+            <div class="upload-box">
+                <strong>Upload mode is waiting for a file.</strong><br><br>
+                Use the sidebar to download the Excel template. The workbook must include two sheets:
+                <br><br>
+                <strong>Revenue_COGS</strong> and <strong>Opex_Headcount</strong>.
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        st.stop()
+
+    try:
+        return load_uploaded_tables(uploaded_file), "Uploaded Dataset"
+
+    except Exception as error:
+        render_page_header(
+            "Upload Error",
+            "FinPlanIQ could not process the uploaded workbook.",
+        )
+
+        st.error(str(error))
+
+        st.markdown(
+            """
+            Please check that your workbook follows the template exactly:
+            - Sheet names must be `Revenue_COGS` and `Opex_Headcount`
+            - Required columns must be present
+            - Numeric columns cannot contain blanks, text, or negative values
+            - Month values should look like `2025-01-01` or `Jan 2025`
+            """
+        )
+
+        st.stop()
 
 
 def render_global_filters(monthly, departments, revenue):
@@ -178,17 +318,17 @@ def render_global_filters(monthly, departments, revenue):
 
     selected_region = st.sidebar.selectbox(
         "Region",
-        ["All"] + sorted(revenue["region"].unique().tolist()),
+        ["All"] + sorted(revenue["region"].dropna().unique().tolist()),
     )
 
     selected_business_unit = st.sidebar.selectbox(
         "Business Unit",
-        ["All"] + sorted(revenue["business_unit"].unique().tolist()),
+        ["All"] + sorted(revenue["business_unit"].dropna().unique().tolist()),
     )
 
     selected_department = st.sidebar.selectbox(
         "Department",
-        ["All"] + sorted(departments["department"].unique().tolist()),
+        ["All"] + sorted(departments["department"].dropna().unique().tolist()),
     )
 
     return selected_month, selected_region, selected_business_unit, selected_department
@@ -197,17 +337,120 @@ def render_global_filters(monthly, departments, revenue):
 def render_kpi_cards(latest):
     col1, col2, col3, col4, col5 = st.columns(5)
 
-    col1.metric("Total Revenue", format_money(latest["actual_revenue"]), format_money(latest["revenue_variance"]))
-    col2.metric("Revenue Variance %", format_pct(latest["revenue_variance_pct"]))
-    col3.metric("Gross Margin %", format_pct(latest["gross_margin_pct"]))
-    col4.metric("EBITDA", format_money(latest["actual_ebitda"]), format_money(latest["ebitda_variance"]))
-    col5.metric("EBITDA Margin", format_pct(latest["ebitda_margin_pct"]))
+    col1.metric(
+        "Total Revenue",
+        format_money(latest["actual_revenue"]),
+        format_money(latest["revenue_variance"]),
+    )
+
+    col2.metric(
+        "Revenue Variance %",
+        format_pct(latest["revenue_variance_pct"]),
+    )
+
+    col3.metric(
+        "Gross Margin %",
+        format_pct(latest["gross_margin_pct"]),
+    )
+
+    col4.metric(
+        "EBITDA",
+        format_money(latest["actual_ebitda"]),
+        format_money(latest["ebitda_variance"]),
+    )
+
+    col5.metric(
+        "EBITDA Margin",
+        format_pct(latest["ebitda_margin_pct"]),
+    )
 
 
-def executive_summary_page(monthly, drivers, selected_month):
+def render_filter_note(
+    selected_month,
+    selected_region,
+    selected_business_unit,
+    selected_department,
+    active_dataset_label,
+):
+    st.markdown(
+        f"""
+        <div class="filter-note">
+            <strong>Selected view:</strong>
+            {pd.to_datetime(selected_month).strftime("%b %Y")} |
+            Region: {selected_region} |
+            Business Unit: {selected_business_unit} |
+            Department: {selected_department} |
+            Source: {active_dataset_label}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_ebitda_bridge(latest):
+    revenue_impact = latest["actual_revenue"] - latest["budget_revenue"]
+    cogs_impact = -(latest["actual_cogs"] - latest["budget_cogs"])
+    opex_impact = -(latest["actual_opex"] - latest["budget_opex"])
+
+    fig = go.Figure(
+        go.Waterfall(
+            name="EBITDA Bridge",
+            orientation="v",
+            measure=["absolute", "relative", "relative", "relative", "total"],
+            x=[
+                "Budget EBITDA",
+                "Revenue Variance",
+                "COGS Impact",
+                "Opex Impact",
+                "Actual EBITDA",
+            ],
+            y=[
+                latest["budget_ebitda"],
+                revenue_impact,
+                cogs_impact,
+                opex_impact,
+                latest["actual_ebitda"],
+            ],
+            connector={"line": {"color": "#94A3B8"}},
+            increasing={"marker": {"color": FINANCE_COLORS["favorable"]}},
+            decreasing={"marker": {"color": FINANCE_COLORS["unfavorable"]}},
+            totals={"marker": {"color": FINANCE_COLORS["neutral"]}},
+        )
+    )
+
+    fig.update_layout(
+        title="EBITDA Variance Bridge",
+        template=CHART_TEMPLATE,
+        yaxis_title="Amount ($)",
+        showlegend=False,
+        height=430,
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+def executive_summary_page(
+    monthly,
+    departments,
+    revenue,
+    drivers,
+    selected_month,
+    selected_region,
+    selected_business_unit,
+    selected_department,
+    active_dataset_label,
+):
     render_page_header(
         "FinPlanIQ",
-        "Monthly FP&A performance review for budget vs actuals, variance analysis, forecasting, and scenario planning.",
+        "Self-service FP&A analytics for budget vs actuals, variance analysis, forecasting, scenario planning, and management reporting.",
+    )
+
+    render_filter_note(
+        selected_month,
+        selected_region,
+        selected_business_unit,
+        selected_department,
+        active_dataset_label,
     )
 
     selected_monthly = monthly[monthly["month"] == selected_month]
@@ -232,6 +475,27 @@ def executive_summary_page(monthly, drivers, selected_month):
         </div>
         """,
         unsafe_allow_html=True,
+    )
+
+    render_ebitda_bridge(latest)
+
+    forecast = build_simple_forecast(monthly_chart, months_ahead=6)
+    scenario_table = build_revenue_downside_table(latest)
+
+    management_pack = build_management_pack(
+        monthly_chart,
+        departments[departments["month"] == selected_month],
+        revenue[revenue["month"] == selected_month],
+        latest_drivers,
+        forecast,
+        scenario_table,
+    )
+
+    st.download_button(
+        label="Download Monthly FP&A Pack",
+        data=management_pack,
+        file_name=f"finplaniq_fpa_pack_{pd.to_datetime(selected_month).strftime('%Y_%m')}.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
 
     col1, col2 = st.columns(2)
@@ -307,7 +571,10 @@ def budget_actuals_page(monthly, selected_month):
     )
 
     st.plotly_chart(fig, use_container_width=True)
-    st.dataframe(monthly_chart[["month", budget_col, actual_col]], use_container_width=True)
+    st.dataframe(
+        monthly_chart[["month", budget_col, actual_col]],
+        use_container_width=True,
+    )
 
 
 def department_page(departments, selected_month, selected_department):
@@ -335,7 +602,10 @@ def department_page(departments, selected_month, selected_department):
     )
 
     st.plotly_chart(fig, use_container_width=True)
-    st.dataframe(filtered.sort_values("opex_variance", ascending=False), use_container_width=True)
+    st.dataframe(
+        filtered.sort_values("opex_variance", ascending=False),
+        use_container_width=True,
+    )
 
 
 def trends_page(monthly, revenue, selected_region, selected_business_unit):
@@ -376,7 +646,9 @@ def trends_page(monthly, revenue, selected_region, selected_business_unit):
         filtered_revenue = filtered_revenue[filtered_revenue["region"] == selected_region]
 
     if selected_business_unit != "All":
-        filtered_revenue = filtered_revenue[filtered_revenue["business_unit"] == selected_business_unit]
+        filtered_revenue = filtered_revenue[
+            filtered_revenue["business_unit"] == selected_business_unit
+        ]
 
     revenue_by_region = (
         filtered_revenue
@@ -389,7 +661,7 @@ def trends_page(monthly, revenue, selected_region, selected_business_unit):
         x="month",
         y="actual_revenue",
         color="region",
-        title="Revenue by Region",
+        title="Filtered Revenue Trend",
         template=CHART_TEMPLATE,
     )
 
@@ -475,7 +747,11 @@ def scenario_page(monthly, selected_month):
     kpi1, kpi2, kpi3, kpi4 = st.columns(4)
 
     kpi1.metric("Scenario Revenue", format_money(result["scenario_revenue"]))
-    kpi2.metric("Scenario EBITDA", format_money(result["scenario_ebitda"]), format_money(result["ebitda_impact"]))
+    kpi2.metric(
+        "Scenario EBITDA",
+        format_money(result["scenario_ebitda"]),
+        format_money(result["ebitda_impact"]),
+    )
     kpi3.metric("EBITDA Margin", format_pct(result["scenario_ebitda_margin_pct"]))
     kpi4.metric("Margin Impact", f"{result['margin_impact_pp']} pp")
 
@@ -514,7 +790,10 @@ def variance_driver_page(drivers, selected_month):
 
 
 def main():
-    monthly, departments, revenue, drivers = load_tables()
+    data_source, uploaded_file = render_data_source_selector()
+
+    tables, active_dataset_label = get_active_tables(data_source, uploaded_file)
+    monthly, departments, revenue, drivers = tables
 
     selected_month, selected_region, selected_business_unit, selected_department = render_global_filters(
         monthly,
@@ -536,7 +815,17 @@ def main():
     )
 
     if page == "Executive Summary":
-        executive_summary_page(monthly, drivers, selected_month)
+        executive_summary_page(
+            monthly,
+            departments,
+            revenue,
+            drivers,
+            selected_month,
+            selected_region,
+            selected_business_unit,
+            selected_department,
+            active_dataset_label,
+        )
     elif page == "Budget vs Actuals":
         budget_actuals_page(monthly, selected_month)
     elif page == "Department Analysis":
