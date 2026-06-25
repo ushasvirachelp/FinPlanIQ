@@ -1,18 +1,22 @@
+# FinPlanIQ
+
 ## Live Demo
 
 https://finplaniq-jyrfgtljthputrmbmjj8ca.streamlit.app/
 
-# FinPlanIQ
+FinPlanIQ is a deployed FP&A and finance analytics portfolio project that recreates a simplified month-end reporting workflow for budget vs actuals, variance analysis, department performance, forecasting, scenario planning, and management pack generation.
 
-FinPlanIQ is an FP&A and finance analytics portfolio project that simulates a company's monthly financial performance and analyzes budget vs actuals, revenue variance, expense variance, department performance, rolling forecasts, and scenario analysis.
+I built this project to strengthen my finance analytics knowledge and better understand how internal finance teams analyze performance, explain variances, and support leadership reporting.
 
 The project is designed for roles such as Financial Analyst, FP&A Analyst, Finance Data Analyst, BI Analyst, Business Analyst in finance, and Risk/Reporting Analyst.
 
 ## Business Problem
 
-Finance teams need to understand whether the company is performing above or below plan, which departments are overspending, which revenue segments are underperforming, and how future scenarios may impact profitability.
+Month-end FP&A reporting often involves comparing actuals against plan, identifying key variance drivers, reviewing department-level spend, updating forecasts, modeling downside scenarios, and preparing leadership-ready summaries.
 
-FinPlanIQ solves this by creating a realistic finance reporting workflow using Python, SQL, DuckDB, and Streamlit.
+FinPlanIQ explores how this workflow can be made more repeatable and self-service by combining structured financial data, automated KPI calculations, variance analysis, forecasting, scenario modeling, and Excel management pack export.
+
+The project uses Python, SQL, DuckDB, and Streamlit to simulate and analyze a realistic finance reporting workflow.
 
 ## Key Features
 
@@ -23,7 +27,10 @@ FinPlanIQ solves this by creating a realistic finance reporting workflow using P
 * Rolling revenue and EBITDA forecast
 * Scenario analysis for revenue drops, payroll increases, and marketing spend changes
 * Automated executive summary written in FP&A business language
+* Downloadable Excel management pack
+* User-uploaded FP&A datasets using a provided Excel template
 * SQL reporting queries for finance analytics
+* Deployed Streamlit dashboard
 
 ## Security Features
 
@@ -95,6 +102,8 @@ The dataset includes:
 * Business units
 * Variance drivers
 
+FinPlanIQ also supports optional template-based user uploads for demonstration purposes. Uploaded files are processed in memory and should follow the provided Excel template.
+
 ## Core KPIs
 
 | KPI                         | Definition                                              |
@@ -133,3 +142,9 @@ The dataset includes:
 
 7. Variance Drivers
    ![alt text](<Screenshot 2026-06-24 at 3.31.03 PM.png>)
+
+## Project Note
+
+FinPlanIQ is a portfolio and learning project. It uses a simulated demo dataset and optional template-based uploads for demonstration purposes.
+
+It is not investment advice, financial advice, or an enterprise production finance system. Users should avoid uploading confidential company financial data to a public demo deployment.
