@@ -1,5 +1,6 @@
 import html
 import sys
+from io import BytesIO
 from pathlib import Path
 
 import duckdb
@@ -16,6 +17,11 @@ from src.executive_summary import generate_executive_summary
 from src.export_pack import build_management_pack
 from src.forecasting import build_simple_forecast
 from src.scenario_analysis import apply_scenario, build_revenue_downside_table
+from src.security_utils import (
+    UploadSecurityError,
+    create_security_event,
+    validate_uploaded_file_security,
+)
 from src.upload_processor import build_upload_template, process_uploaded_workbook
 
 
@@ -156,6 +162,28 @@ st.markdown(
         margin-bottom: 18px;
     }
 
+    .privacy-box {
+        background-color: #0F172A;
+        border: 1px solid #334155;
+        border-left: 5px solid #38BDF8;
+        padding: 16px 18px;
+        border-radius: 12px;
+        color: #CBD5E1;
+        font-size: 14px;
+        margin-bottom: 18px;
+        line-height: 1.6;
+    }
+
+    .security-box {
+        background-color: #052E16;
+        border: 1px solid #166534;
+        padding: 12px 14px;
+        border-radius: 10px;
+        color: #DCFCE7;
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
     .stDownloadButton button {
         background-color: #16A34A;
         color: #FFFFFF;
@@ -191,8 +219,8 @@ def load_demo_tables():
 
 
 @st.cache_data
-def load_uploaded_tables(uploaded_file):
-    processed = process_uploaded_workbook(uploaded_file)
+def load_uploaded_tables(uploaded_file_bytes):
+    processed = process_uploaded_workbook(BytesIO(uploaded_file_bytes))
     return (
         processed["monthly"],
         processed["departments"],
@@ -229,6 +257,20 @@ def render_page_header(title, subtitle):
     )
 
 
+def render_privacy_notice():
+    st.markdown(
+        """
+        <div class="privacy-box">
+            <strong>Privacy-first upload handling:</strong><br>
+            Uploaded workbooks are processed in memory for this dashboard session.
+            FinPlanIQ does not intentionally save uploaded financial files to the project folder.
+            For safety, avoid uploading real confidential company financials to a public demo deployment.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def render_data_source_selector():
     st.sidebar.markdown("## Data Source")
 
@@ -252,6 +294,7 @@ def render_data_source_selector():
         uploaded_file = st.sidebar.file_uploader(
             "Upload completed Excel workbook",
             type=["xlsx"],
+            help="Only standard .xlsx files up to 10 MB are accepted.",
         )
 
     return data_source, uploaded_file
@@ -259,13 +302,15 @@ def render_data_source_selector():
 
 def get_active_tables(data_source, uploaded_file):
     if data_source == "Demo Dataset":
-        return load_demo_tables(), "Demo Dataset"
+        return load_demo_tables(), "Demo Dataset", None
 
     if uploaded_file is None:
         render_page_header(
             "Upload Your FP&A Dataset",
             "Download the template, fill in your revenue and opex data, then upload the workbook to generate the dashboard.",
         )
+
+        render_privacy_notice()
 
         st.markdown(
             """
@@ -274,6 +319,9 @@ def get_active_tables(data_source, uploaded_file):
                 Use the sidebar to download the Excel template. The workbook must include two sheets:
                 <br><br>
                 <strong>Revenue_COGS</strong> and <strong>Opex_Headcount</strong>.
+                <br><br>
+                Accepted file type: <strong>.xlsx only</strong><br>
+                Maximum file size: <strong>10 MB</strong>
             </div>
             """,
             unsafe_allow_html=True,
@@ -282,7 +330,40 @@ def get_active_tables(data_source, uploaded_file):
         st.stop()
 
     try:
-        return load_uploaded_tables(uploaded_file), "Uploaded Dataset"
+        security_metadata = validate_uploaded_file_security(uploaded_file)
+        security_event = create_security_event(
+            "upload_validation_passed",
+            security_metadata,
+        )
+
+        uploaded_file_bytes = uploaded_file.getvalue()
+        tables = load_uploaded_tables(uploaded_file_bytes)
+
+        return tables, "Uploaded Dataset", security_event
+
+    except UploadSecurityError as security_error:
+        render_page_header(
+            "Upload Security Check Failed",
+            "The uploaded file did not pass FinPlanIQ's basic upload safety checks.",
+        )
+
+        render_privacy_notice()
+        st.error(str(security_error))
+
+        st.markdown(
+            """
+            Please upload a standard Excel `.xlsx` workbook only.
+            
+            FinPlanIQ does not accept:
+            - macro-enabled Excel files
+            - old Excel formats
+            - CSV files
+            - compressed files
+            - files larger than 10 MB
+            """
+        )
+
+        st.stop()
 
     except Exception as error:
         render_page_header(
@@ -290,7 +371,11 @@ def get_active_tables(data_source, uploaded_file):
             "FinPlanIQ could not process the uploaded workbook.",
         )
 
-        st.error(str(error))
+        render_privacy_notice()
+        st.error("The workbook could not be processed. Please check the template format and try again.")
+
+        with st.expander("Technical detail"):
+            st.write(str(error))
 
         st.markdown(
             """
@@ -381,6 +466,24 @@ def render_filter_note(
             Business Unit: {selected_business_unit} |
             Department: {selected_department} |
             Source: {active_dataset_label}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_security_status(security_event):
+    if security_event is None:
+        return
+
+    details = security_event["details"]
+
+    st.sidebar.markdown(
+        f"""
+        <div class="security-box">
+            <strong>Upload security check passed</strong><br>
+            File: {html.escape(str(details.get("filename", "uploaded file")))}<br>
+            Size: {details.get("file_size_mb", "N/A")} MB
         </div>
         """,
         unsafe_allow_html=True,
@@ -792,8 +895,10 @@ def variance_driver_page(drivers, selected_month):
 def main():
     data_source, uploaded_file = render_data_source_selector()
 
-    tables, active_dataset_label = get_active_tables(data_source, uploaded_file)
+    tables, active_dataset_label, security_event = get_active_tables(data_source, uploaded_file)
     monthly, departments, revenue, drivers = tables
+
+    render_security_status(security_event)
 
     selected_month, selected_region, selected_business_unit, selected_department = render_global_filters(
         monthly,
