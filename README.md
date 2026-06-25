@@ -1,6 +1,6 @@
 ## Live Demo
 
-[Launch FinPlanIQ](https://finplaniq-jyrfgtljthputrmbmjj8ca.streamlit.app/)
+https://finplaniq-jyrfgtljthputrmbmjj8ca.streamlit.app/
 
 # FinPlanIQ
 
